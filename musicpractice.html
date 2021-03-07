@@ -21,13 +21,20 @@ path {
 </style>
 <body>
 
+  <div id="my_dataviz"></div>
+
+  <button onclick="update(piano_data)">Piano</button>
+<button onclick="update(ukulele_data)">Ukulele</button>
+  <div id="my_dataviz2"></div>
+
 <!-- load the d3.js library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script> -->
+<script src="https://d3js.org/d3.v4.js"></script>
 
 <script>
 
 // Parse the date / time
-var parseDate = d3.time.format("%d/%b/%y").parse;
+// var parseDate = d3.time.format("%d/%b/%y").parse;
 
 // set the dimensions and margins of the graph
 var margin = {top: 30, right: 30, bottom: 70, left: 60},
@@ -35,13 +42,27 @@ var margin = {top: 30, right: 30, bottom: 70, left: 60},
     height = 400 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
-var svg = d3.select("body")
+var svg = d3.select("#my_dataviz")
   .append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
   .append("g")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
+
+// set the dimensions and margins of the graph
+  var margin2 = {top: 30, right: 30, bottom: 70, left: 60},
+      width2 = 460 - margin.left - margin.right,
+      height2 = 400 + height - margin.top - margin.bottom;
+
+  // append the svg object to the body of the page
+  var svg2 = d3.select("#my_dataviz2")
+    .append("svg")
+      .attr("width", width2 + margin.left + margin.right)
+      .attr("height", height2 + margin.top + margin.bottom)
+    .append("g")
+      .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
 
     // var piano_data = d3.csv("https://raw.githubusercontent.com/morganoneka/MusicPractice/main/data/TranscribedData.csv", data=> {
     //     data.filter(function(d){ return d.Instrument == "Piano" });
@@ -59,33 +80,8 @@ var svg = d3.select("body")
       121: 2021
     };
 
-    var piano_data = d3.csv("https://raw.githubusercontent.com/morganoneka/MusicPractice/main/data/TranscribedData.csv",
-
-    // tell d3 how to format the data
-    function(row){
-      return {PracticeDate : row.Date, Instrument : row.Instrument, Artist: row.Artist, Genre: row.Genre};
-    },
-
-    // what to do when the data is loaded
-    function(data){
-      console.log(data);
-
-      // data filter: just piano data
-      var piano_data = data.filter(function(d){ return d.Instrument == "Piano" });
-
-      console.log(piano_data);
-
-      // data filter: just march of 2020
-      var march_data = data.filter(function(d){
-        date = new Date(d.PracticeDate);
-        return (date.getMonth() == 2 && date.getYear() == 120);
-      });
-
-      console.log(march_data);
-
-      // get total practices by month
-      // http://www.d3noob.org/2014/02/grouping-and-summing-data-using-d3nest.html
-      var nested_data_month = d3.nest()
+    function nest_by_month(my_data){
+      return d3.nest()
         .key(function (d) {
           date = new Date(d.PracticeDate);
           return monthNames[date.getMonth()].concat(" ").concat(yearConv[date.getYear()]);
@@ -96,11 +92,114 @@ var svg = d3.select("body")
               return count + 1;
           }, 0);
           return total;
-        }).entries(data);
+        }).entries(my_data);
+    }
 
-      console.log(nested_data_month);
+    var my_data = d3.csv("https://raw.githubusercontent.com/morganoneka/MusicPractice/main/data/TranscribedData.csv",
+
+    // tell d3 how to format the data
+    function(row){
+      return {PracticeDate : row.Date, Instrument : row.Instrument, Artist: row.Artist, Genre: row.Genre};
+    },
+
+    // what to do when the data is loaded
+    function(data){
+
+      // get total practices by month
+      // http://www.d3noob.org/2014/02/grouping-and-summing-data-using-d3nest.html
+      var nested_data_month = nest_by_month(data);
+
+      // Visualize All Months
+      var x = d3.scaleBand()
+        .range([ 0, width ])
+        .domain(nested_data_month.map(function(d) { return d.key; }))
+        .paddingInner(0.2);
+      svg.append("g")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x))
+        .selectAll("text")
+          .attr("transform", "translate(-10,0)rotate(-45)")
+          .style("text-anchor", "end");
+
+      // Add Y axis
+      var y = d3.scaleLinear()
+        .domain([0, 500])
+        .range([ height, 0]);
+      svg.append("g")
+        .call(d3.axisLeft(y));
+
+      // Bars
+      svg.selectAll("mybar")
+        .data(nested_data_month)
+        .enter()
+        .append("rect")
+          .attr("x", function(d) { return x(d.key); })
+          .attr("y", function(d) { return y(d.value); })
+          .attr("width", x.bandwidth())
+          .attr("height", function(d) { return height - y(d.value); })
+          .attr("fill", "#69b3a2")
+
+      var piano_data = nest_by_month(data.filter(function(d){ return d.Instrument == "Piano" }));
+      console.log(piano_data);
+      var ukulele_data = nest_by_month(data.filter(function(d){ return d.Instrument == "Ukulele" }));
+      var eguitar_data = nest_by_month(data.filter(function(d){ return d.Instrument == "Electric Guitar" }));
+      var aguitar_data = data.filter(function(d){ return d.Instrument == "Acoustic Guitar" });
+      var bass_data = data.filter(function(d){ return d.Instrument == "Bass" });
+      var banjo_data = data.filter(function(d){ return d.Instrument == "Banjo" });
+
+      // Initialize the X axis
+      var x = d3.scaleBand()
+        .range([ 0, width ])
+        .padding(0.2);
+      var xAxis = svg2.append("g")
+        .attr("transform", "translate(0," + height + ")")
+
+      // Initialize the Y axis
+      var y = d3.scaleLinear()
+        .range([ height, 0]);
+      var yAxis = svg2.append("g")
+        .attr("class", "myYaxis")
+
+
+      // A function that create / update the plot for a given variable:
+      function update(data) {
+
+        // Update the X axis
+        x.domain(data.map(function(d) { return d.key; }))
+        xAxis.call(d3.axisBottom(x))
+
+        // Update the Y axis
+        y.domain([0, d3.max(data, function(d) { return d.value }) ]);
+        yAxis.transition().duration(1000).call(d3.axisLeft(y));
+
+        // Create the u variable
+        var u = svg2.selectAll("rect")
+          .data(data)
+
+        u
+          .enter()
+          .append("rect") // Add a new rect for each new elements
+          .merge(u) // get the already existing elements as well
+          .transition() // and apply changes to all of them
+          .duration(1000)
+            .attr("x", function(d) { return x(d.key); })
+            .attr("y", function(d) { return y(d.value); })
+            .attr("width", x.bandwidth())
+            .attr("height", function(d) { return height - y(d.value); })
+            .attr("fill", "#69b3a2")
+
+        // If less group in the new dataset, I delete the ones not in use anymore
+        u
+          .exit()
+          .remove()
+      }
+
+      // Initialize the plot with the first dataset
+      update(piano_data)
 
     }
+
+
 
   )
 
