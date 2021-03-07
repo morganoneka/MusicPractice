@@ -43,13 +43,68 @@ var svg = d3.select("body")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-    var piano_data = d3.csv("https://raw.githubusercontent.com/morganoneka/MusicPractice/main/data/TranscribedData.csv", data=> {
-        data.filter(function(d){ return d.Instrument == "Piano" });
-      })
+    // var piano_data = d3.csv("https://raw.githubusercontent.com/morganoneka/MusicPractice/main/data/TranscribedData.csv", data=> {
+    //     data.filter(function(d){ return d.Instrument == "Piano" });
+    //   })
+    //
+    //   console.log(piano_data)
 
-      console.log(piano_data)
+    // https://stackoverflow.com/questions/30610675/python-pandas-equivalent-in-javascript/30611208#30611208
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
 
-      var data_count = d3.nest()
+    const yearConv = {
+      120: 2020,
+      121: 2021
+    };
+
+    var piano_data = d3.csv("https://raw.githubusercontent.com/morganoneka/MusicPractice/main/data/TranscribedData.csv",
+
+    // tell d3 how to format the data
+    function(row){
+      return {PracticeDate : row.Date, Instrument : row.Instrument, Artist: row.Artist, Genre: row.Genre};
+    },
+
+    // what to do when the data is loaded
+    function(data){
+      console.log(data);
+
+      // data filter: just piano data
+      var piano_data = data.filter(function(d){ return d.Instrument == "Piano" });
+
+      console.log(piano_data);
+
+      // data filter: just march of 2020
+      var march_data = data.filter(function(d){
+        date = new Date(d.PracticeDate);
+        return (date.getMonth() == 2 && date.getYear() == 120);
+      });
+
+      console.log(march_data);
+
+      // get total practices by month
+      // http://www.d3noob.org/2014/02/grouping-and-summing-data-using-d3nest.html
+      var nested_data_month = d3.nest()
+        .key(function (d) {
+          date = new Date(d.PracticeDate);
+          return monthNames[date.getMonth()].concat(" ").concat(yearConv[date.getYear()]);
+        })
+        .rollup(function(d){
+          // https://stackoverflow.com/questions/29422792/how-to-get-the-total-number-of-rows-with-particular-value-in-json-file-in-d3-js
+          total = d.reduce(function(count, entry) {
+              return count + 1;
+          }, 0);
+          return total;
+        }).entries(data);
+
+      console.log(nested_data_month);
+
+    }
+
+  )
+
+      // var data_count = d3.nest()
 
       // var count = piano_data.values.reduce(function(n,val){
       //   return n + (val.Date == "01/01/21");
