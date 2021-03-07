@@ -43,56 +43,72 @@ var svg = d3.select("body")
     .attr("transform",
           "translate(" + margin.left + "," + margin.top + ")");
 
-    // Get the data
-    d3.csv("/data/TranscribedData.csv", function(error, data) {
-        data.forEach(function(d) {
-            d.date = parseDate(d.Date);
-            d.Instrument = +d.Instrument;
-    });
-
-    var nested_data = d3.nest()
-      .key(function(d) { return d.Date; })
-      .key(function(d) { return d.Instrument; })
-      .rollup(function(ids) {
-          return ids.length;
+    var piano_data = d3.csv("https://raw.githubusercontent.com/morganoneka/MusicPractice/main/data/TranscribedData.csv", data=> {
+        data.filter(function(d){ return d.Instrument == "Piano" });
       })
-      .entries(data);
 
-      console.log(nested_data);
+      console.log(piano_data)
 
-        // X axis
-    var x = d3.scaleBand()
-      .range([ 0, width ])
-      .domain(data.map(function(d) { return d.Date; }))
-      .padding(0.2);
-    svg.append("g")
-      .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x))
-      .selectAll("text")
-        .attr("transform", "translate(-10,0)rotate(-45)")
-        .style("text-anchor", "end");
+      var data_count = d3.nest()
 
-    // Add Y axis
-    var y = d3.scaleLinear()
-      .domain([0, 13000])
-      .range([ height, 0]);
-    svg.append("g")
-      .call(d3.axisLeft(y));
+      // var count = piano_data.values.reduce(function(n,val){
+      //   return n + (val.Date == "01/01/21");
+      // }, 0);
+      //
+      // console.log(count)
 
-    // Bars
-    svg.selectAll("mybar")
-      .data(data)
-      .enter()
-      .append("rect")
-        .attr("x", function(d) { return x(d.Date); })
-        .attr("y", function(d) { return y(d.Instrument); })
-        .attr("width", x.bandwidth())
-        .attr("height", function(d) { return height - y(d.Instrument); })
-        .attr("fill", "#69b3a2")
+    // Get the data
+    // d3.csv("https://raw.githubusercontent.com/morganoneka/MusicPractice/main/data/TranscribedData.csv", function(error, data) {
+    //     data.forEach(function(d) {
+    //         d.date = parseDate(d.Date);
+    //         d.Instrument = +d.Instrument;
+    // });
 
-    // })
 
-});
+
+    // var nested_data = d3.nest()
+    //   .key(function(d) { return d.Date; })
+    //   .key(function(d) { return d.Instrument; })
+    //   .rollup(function(ids) {
+    //       return ids.length;
+    //   })
+    //   .entries(data);
+    //
+    //   console.log(nested_data);
+//
+//         // X axis
+//     var x = d3.scaleBand()
+//       .range([ 0, width ])
+//       .domain(data.map(function(d) { return d.Date; }))
+//       .padding(0.2);
+//     svg.append("g")
+//       .attr("transform", "translate(0," + height + ")")
+//       .call(d3.axisBottom(x))
+//       .selectAll("text")
+//         .attr("transform", "translate(-10,0)rotate(-45)")
+//         .style("text-anchor", "end");
+//
+//     // Add Y axis
+//     var y = d3.scaleLinear()
+//       .domain([0, 13000])
+//       .range([ height, 0]);
+//     svg.append("g")
+//       .call(d3.axisLeft(y));
+//
+//     // Bars
+//     svg.selectAll("mybar")
+//       .data(data)
+//       .enter()
+//       .append("rect")
+//         .attr("x", function(d) { return x(d.Date); })
+//         .attr("y", function(d) { return y(d.Instrument); })
+//         .attr("width", x.bandwidth())
+//         .attr("height", function(d) { return height - y(d.Instrument); })
+//         .attr("fill", "#69b3a2")
+//
+//     // })
+//
+// });
 
 </script>
 </body>

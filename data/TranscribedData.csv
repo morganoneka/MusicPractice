@@ -1,4 +1,4 @@
-Date,Instrument,Song/Piece,Artist,Genre
+Date,Instrument,Song,Artist,Genre
 3/4/20,Electric Guitar,Pretender,Foo Fighters,Rock
 3/4/20,Electric Guitar,Found Out About You,Gin Blossoms,Rock
 3/4/20,Bass,Animal I Have Become,Three Days Grace,Rock
@@ -1034,3 +1034,105 @@ Date,Instrument,Song/Piece,Artist,Genre
 1/11/21,Piano,OG Stuff,Me,My Composition
 1/12/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
 1/12/21,Piano,OG Stuff,Me,My Composition
+1/13/21,Acoustic Guitar,Big Love,Fleetwood Mac,Rock
+1/13/21,Electric Guitar,Easy Lover,Phillip Bailey,Pop
+1/13/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+1/13/21,Piano,Phantasie no. 3,Mozart,Classical
+1/13/21,Piano,OG Stuff,Me,My Composition
+1/14/21,Piano,Phantasie no. 3,Mozart,Classical
+1/14/21,Piano,OG Stuff,Me,My Composition
+1/15/21,Banjo,Best Day of My Life,American Authors,Indie
+1/15/21,Piano,Phantasie no. 3,Mozart,Classical
+1/15/21,Piano,OG Stuff,Me,My Composition
+1/15/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+1/16/21,Piano,OG Stuff,Me,My Composition
+1/16/21,Electric Guitar,Crazy Train,Ozzy Osbourne,Rock
+1/16/21,Bass,December 1963,Frankie Valli and the Four Seasons,Pop
+1/16/21,Bass,The Chain,Fleetwood Mac,Rock
+1/16/21,Bass,London Calling,The Clash,Rock
+1/16/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+1/17/21,Piano,OG Stuff,Me,My Composition
+1/17/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+1/17/21,Electric Guitar,Found Out About You,Gin Blossoms,Rock
+1/18/21,Piano,OG Stuff,Me,My Composition
+1/18/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+1/19/21,Piano,OG Stuff,Me,My Composition
+1/19/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+1/20/21,Piano,OG Stuff,Me,My Composition
+1/20/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+1/20/21,Piano,First Arabesque,Debussy,Classical
+1/21/21,Piano,OG Stuff,Me,My Composition
+1/21/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+1/21/21,Piano,First Arabesque,Debussy,Classical
+1/22/21,Piano,OG Stuff,Me,My Composition
+1/22/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+1/22/21,Electric Guitar,Come As You Are,Nirvana,Rock
+1/22/21,Electric Guitar,Dream On,Aerosmith,Rock
+1/23/21,Piano,OG Stuff,Me,My Composition
+1/23/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+1/23/21,Piano,Sonata 16 in C Major,Mozart,Classical
+1/23/21,Electric Guitar,OG Stuff,Me,My Composition
+1/24/21,Electric Guitar,Dream On,Aerosmith,Rock
+1/24/21,Electric Guitar,Easy Lover,Phillip Bailey,Pop
+1/24/21,Piano,OG Stuff,Me,My Composition
+1/24/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+1/25/21,Piano,OG Stuff,Me,My Composition
+1/25/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+1/25/21,Electric Guitar,Easy Lover,Phillip Bailey,Pop
+1/25/21,Electric Guitar,OG Stuff,Me,My Composition
+1/25/21,Piano,Sonata 8 Pathetique,Beethoven,Classical
+1/26/21,Piano,Sonata 8 Pathetique,Beethoven,Classical
+1/26/21,Electric Guitar,OG Stuff,Me,My Composition
+1/27/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+1/27/21,Electric Guitar,OG Stuff,Me,My Composition
+1/27/21,Electric Guitar,Easy Lover,Phillip Bailey,Pop
+1/28/21,Piano,OG Stuff,Me,My Composition
+1/29/21,Electric Guitar,Ain't Talkin Bout Love,Van Halen,Rock
+1/29/21,Electric Guitar,Another Girl Another Planet,The Only Ones,Rock
+1/29/21,Piano,OG Stuff,Me,My Composition
+1/30/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+1/30/21,Piano,OG Stuff,Me,My Composition
+1/31/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+1/31/21,Piano,OG Stuff,Me,My Composition
+1/31/21,Electric Guitar,OG Stuff,Me,My Composition
+1/31/21,Ukulele,OG Stuff,Me,My Composition
+2/1/21,Piano,OG Stuff,Me,My Composition
+2/2/21,Piano,OG Stuff,Me,My Composition
+2/3/21,Piano,OG Stuff,Me,My Composition
+2/3/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+2/4/21,Piano,OG Stuff,Me,My Composition
+2/4/21,Banjo,OG Stuff,Me,My Composition
+2/5/21,Piano,OG Stuff,Me,My Composition
+2/6/21,Piano,OG Stuff,Me,My Composition
+2/7/21,Piano,OG Stuff,Me,My Composition
+2/8/21,Piano,OG Stuff,Me,My Composition
+2/9/21,Piano,OG Stuff,Me,My Composition
+2/10/21,Piano,OG Stuff,Me,My Composition
+2/11/21,Piano,OG Stuff,Me,My Composition
+2/12/21,Piano,OG Stuff,Me,My Composition
+2/13/21,Piano,OG Stuff,Me,My Composition
+2/14/21,Piano,OG Stuff,Me,My Composition
+2/14/21,Ukulele,OG Stuff,Me,My Composition
+2/15/21,Piano,OG Stuff,Me,My Composition
+2/16/21,Piano,OG Stuff,Me,My Composition
+2/17/21,Piano,OG Stuff,Me,My Composition
+2/18/21,Piano,OG Stuff,Me,My Composition
+2/19/21,Piano,OG Stuff,Me,My Composition
+2/20/21,Piano,OG Stuff,Me,My Composition
+2/21/21,Piano,OG Stuff,Me,My Composition
+2/22/21,Piano,OG Stuff,Me,My Composition
+2/23/21,Piano,OG Stuff,Me,My Composition
+2/24/21,Piano,OG Stuff,Me,My Composition
+2/25/21,Piano,OG Stuff,Me,My Composition
+2/26/21,Piano,OG Stuff,Me,My Composition
+2/27/21,Piano,OG Stuff,Me,My Composition
+2/28/21,Piano,OG Stuff,Me,My Composition
+3/1/21,Piano,OG Stuff,Me,My Composition
+3/2/21,Piano,OG Stuff,Me,My Composition
+3/3/21,Piano,OG Stuff,Me,My Composition
+3/4/21,Piano,OG Stuff,Me,My Composition
+3/5/21,Piano,OG Stuff,Me,My Composition
+3/6/21,Piano,OG Stuff,Me,My Composition
+3/6/21,Electric Guitar,Hungry Like the Wolf,Duran Duran,Rock
+3/6/21,Electric Guitar,Dream On,Aerosmith,Rock
+3/6/21,Electric Guitar,OG Stuff,Me,My Composition
