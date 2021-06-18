@@ -167,7 +167,6 @@ Date,Instrument,Song,Artist,Genre
 4/9/20,Electric Guitar,Two Weeks,All That Remains,Metal
 4/9/20,Electric Guitar,Smells Like Teen Spirit,Nirvana,Rock
 4/9/20,Electric Guitar,You're Gonna Go Far Kid,The Offspring,Rock
-4/10/20,Ukulele,Scales,N/A,Technique
 4/10/20,Ukulele,I'm Not Angry Anymore,Paramore,Rock
 4/10/20,Ukulele,Hey There Delilah,Plain White T's,Pop
 4/10/20,Piano,Moonlight Sonata,Beethoven,Classical
@@ -1136,3 +1135,289 @@ Date,Instrument,Song,Artist,Genre
 3/6/21,Electric Guitar,Hungry Like the Wolf,Duran Duran,Rock
 3/6/21,Electric Guitar,Dream On,Aerosmith,Rock
 3/6/21,Electric Guitar,OG Stuff,Me,My Composition
+3/7/21,Piano,OG Stuff,Me,My Composition
+3/8/21,Electric Guitar,Dream On,Aerosmith,Rock
+3/8/21,Electric Guitar,Ain't Talkin Bout Love,Van Halen,Rock
+3/8/21,Piano,OG Stuff,Me,My Composition
+3/9/21,Piano,OG Stuff,Me,My Composition
+3/10/21,Piano,OG Stuff,Me,My Composition
+3/10/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+3/11/21,Piano,OG Stuff,Me,My Composition
+3/12/21,Piano,OG Stuff,Me,My Composition
+3/13/21,Piano,OG Stuff,Me,My Composition
+3/14/21,Electric Guitar,December 1963,Frankie Valli and the Four Seasons,Pop
+3/14/21,Electric Guitar,Easy Lover,Phillip Bailey,Pop
+3/14/21,Electric Guitar,Kickstart My Heart,Motley Crue,Metal
+3/14/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+3/14/21,Piano,Moonlight Sonata,Beethoven,Classical
+3/15/21,Piano,OG Stuff,Me,My Composition
+3/16/21,Electric Guitar,Easy Lover,Phillip Bailey,Pop
+3/16/21,Electric Guitar,For Whom The Bell Tolls,Metallica,Metal
+3/16/21,Electric Guitar,OG Stuff,Me,My Composition
+3/16/21,Piano,OG Stuff,Me,My Composition
+3/17/21,Piano,Moonlight Sonata,Beethoven,Classical
+3/18/21,Piano,OG Stuff,Me,My Composition
+3/18/21,Piano,Moonlight Sonata,Beethoven,Classical
+3/19/21,Electric Guitar,Easy Lover,Phillip Bailey,Pop
+3/19/21,Electric Guitar,Separate Ways (Worlds Apart),Journey,Rock
+3/20/21,Banjo,Come On Eileen,Dexys Midnight Runners,Pop
+3/20/21,Banjo,Unwell,Matchbox Twenty,Rock
+3/20/21,Piano,Moonlight Sonata,Beethoven,Classical
+3/20/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+3/20/21,Piano,Waterfall Etude,Chopin,Classical
+3/20/21,Bass,The Less I Know the Better,Tame Impala,Indie
+3/20/21,Bass,Holiday Road,Lindsey Buckingham,Rock
+3/21/21,Electric Guitar,Living on a Prayer,Bon Jovi,Rock
+3/21/21,Electric Guitar,Knights of Cydonia,Muse,Rock
+3/21/21,Piano,OG Stuff,Me,My Composition
+3/21/21,Piano,Waterfall Etude,Chopin,Classical
+3/22/21,Piano,Waterfall Etude,Chopin,Classical
+3/22/21,Piano,OG Stuff,Me,My Composition
+3/23/21,Piano,Waterfall Etude,Chopin,Classical
+3/24/21,Piano,OG Stuff,Me,My Composition
+3/24/21,Piano,Waterfall Etude,Chopin,Classical
+3/25/21,Electric Guitar,Easy Lover,Philip Bailey,Pop
+3/25/21,Electric Guitar,Whip It,DEVO,Rock
+3/25/21,Piano,OG Stuff,Me,My Composition
+3/26/21,Bass,Do You Believe in Love,Huey Lewis & the News,Pop
+3/26/21,Bass,Whip It,DEVO,Rock
+3/26/21,Bass,Rasputin,Boney M,Pop
+3/26/21,Piano,Waterfall Etude,Chopin,Classical
+3/27/21,Electric Guitar,Dream On,Aerosmith,Rock
+3/27/21,Piano,OG Stuff,Me,My Composition
+3/28/21,Electric Guitar,Dream On,Aerosmith,Rock
+3/28/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+3/29/21,Piano,Moonlight Sonata,Beethoven,Classical
+3/29/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+3/30/21,Piano,OG Stuff,Me,My Composition
+3/31/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/1/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/1/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+4/2/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/3/21,Electric Guitar,Easy Lover,Philip Bailey,Pop
+4/3/21,Electric Guitar,Separate Ways (Worlds Apart),Journey,Rock
+4/4/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/5/21,Piano,OG Stuff,Me,My Composition
+4/6/21,Electric Guitar,Separate Ways (Worlds Apart),Journey,Rock
+4/7/21,Piano,OG Stuff,Me,My Composition
+4/8/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/9/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/10/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/10/21,Electric Guitar,Rock of Ages,Def Leppard,Metal
+4/10/21,Electric Guitar,Knights of Cydonia,Muse,Rock
+4/11/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/11/21,Piano,OG Stuff,Me,My Composition
+4/12/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/12/21,Piano,OG Stuff,Me,My Composition
+4/13/21,Electric Guitar,Easy Lover,Philip Bailey,Pop
+4/13/21,Acoustic Guitar,Somewhere Only We Know,Keane,Pop
+4/13/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/13/21,Piano,OG Stuff,Me,My Composition
+4/14/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/15/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/16/21,Electric Guitar,All the Small Things,blink-182,Rock
+4/16/21,Electric Guitar,Talk Too Much,COIN,Indie
+4/16/21,Electric Guitar,Thank You for the Venom,My Chemical Romance,Rock
+4/16/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/16/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/16/21,Bass,Rasputin,Boney M,Pop
+4/16/21,Bass,The Less I Know the Better,Tame Impala,Indie
+4/17/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/17/21,Piano,Phantasie no. 3,Mozart,Classical
+4/18/21,Piano,Moonlight Sonata,Beethoven,Classical
+4/18/21,Piano,Phantasie no. 3,Mozart,Classical
+4/19/21,Piano,Phantasie no. 3,Mozart,Classical
+4/19/21,Electric Guitar,Animal I Have Become,Three Days Grace,Rock
+4/19/21,Electric Guitar,Game of Thrones Theme,Ramin Djawadi,Soundtrack
+4/19/21,Electric Guitar,Black Sails Theme,Bear McCreary,Soundtrack
+4/19/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+4/20/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+4/20/21,Piano,OG Stuff,Me,My Composition
+4/21/21,Bass,Ain't No Man,The Avett Brothers,Folk
+4/21/21,Bass,Rasputin,Boney M,Pop
+4/21/21,Electric Guitar,Black Sails Theme,Bear McCreary,Soundtrack
+4/22/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+4/23/21,Piano,OG Stuff,Me,My Composition
+4/23/21,Banjo,Little Lion Man,Mumford and Sons,Folk
+4/23/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+4/24/21,Piano,OG Stuff,Me,My Composition
+4/24/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+4/25/21,Piano,OG Stuff,Me,My Composition
+4/25/21,Electric Guitar,Black Sails Theme,Bear McCreary,Soundtrack
+4/26/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+4/26/21,Piano,OG Stuff,Me,My Composition
+4/27/21,Piano,OG Stuff,Me,My Composition
+4/28/21,Piano,OG Stuff,Me,My Composition
+4/29/21,Piano,OG Stuff,Me,My Composition
+4/30/21,Piano,OG Stuff,Me,My Composition
+5/1/21,Piano,OG Stuff,Me,My Composition
+5/1/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+5/1/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/2/21,Bass,Something is Not Right With Me,Cold War Kids,Indie
+5/2/21,Bass,Do I Wanna Know,Arctic Monkeys,Indie
+5/2/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/3/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/4/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/5/21,Electric Guitar,Do I Wanna Know,Arctic Monkeys,Indie
+5/5/21,Electric Guitar,Black Sails Theme,Bear McCreary,Soundtrack
+5/5/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/5/21,Piano,OG Stuff,Me,My Composition
+5/6/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/7/21,Electric Guitar,We Didn't Start the Fire,Billy Joel,Rock
+5/7/21,Electric Guitar,Black Sails Theme,Bear McCreary,Soundtrack
+5/7/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/8/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/9/21,Bass,Whip It,DEVO,Rock
+5/9/21,Bass,The Less I Know the Better,Tame Impala,Indie
+5/9/21,Bass,Rasputin,Boney M,Pop
+5/9/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+5/9/21,Electric Guitar,Wild Child,W.A.S.P.,Rock
+5/9/21,Electric Guitar,OG Stuff,Me,My Composition
+5/9/21,Piano,OG Stuff,Me,My Composition
+5/10/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/10/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+5/11/21,Electric Guitar,Just What I Needed,The Cars,Rock
+5/11/21,Electric Guitar,Knights of Cydonia,Muse,Rock
+5/11/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/12/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/13/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/13/21,Piano,Waterfall Etude,Chopin,Classical
+5/13/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+5/13/21,Piano,OG Stuff,Me,My Composition
+5/13/21,Electric Guitar,Knights of Cydonia,Muse,Rock
+5/14/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+5/14/21,Electric Guitar,The Ghost of You,My Chemical Romance,Rock
+5/14/21,Electric Guitar,Do I Wanna Know,Arctic Monkeys,Indie
+5/14/21,Bass,Rasputin,Boney M,Pop
+5/15/21,Bass,Rasputin,Boney M,Pop
+5/16/21,Electric Guitar,OG Stuff,Me,My Composition
+5/17/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+5/17/21,Bass,Rasputin,Boney M,Pop
+5/17/21,Bass,The Less I Know the Better,Tame Impala,Indie
+5/17/21,Electric Guitar,OG Stuff,Me,My Composition
+5/18/21,Electric Guitar,Easy Lover,Philip Bailey,Pop
+5/18/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+5/19/21,Electric Guitar,Ain't Talkin Bout Love,Van Halen,Rock
+5/19/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/19/21,Piano,Invention 4,Bach,Classical
+5/20/21,Bass,Rasputin,Boney M,Pop
+5/20/21,Bass,Killing in the Name,Rage Against the Machine,Rock
+5/20/21,Electric Guitar,The Look,Roxette,Rock
+5/20/21,Electric Guitar,Burnin for You,Blue Oyster Cult,Rock
+5/20/21,Electric Guitar,OG Stuff,Me,My Composition
+5/20/21,Piano,OG Stuff,Me,My Composition
+5/21/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/21/21,Piano,Invention 4,Bach,Classical
+5/22/21,Piano,Piano Sonata no. 3,Mozart,Classical
+5/23/21,Banjo,Little Lion Man,Mumford and Sons,Folk
+5/23/21,Banjo,History Book,Dry the River,Folk
+5/23/21,Electric Guitar,Rasputin,Boney M,Pop
+5/23/21,Piano,Piano Sonata no. 3,Mozart,Classical
+5/24/21,Electric Guitar,Rebel Yell,Billy Idol,Rock
+5/24/21,Electric Guitar,Smells Like Teen Spirit,Nirvana,Rock
+5/24/21,Piano,OG Stuff,Me,My Composition
+5/25/21,Piano,Piano Sonata no. 3,Mozart,Classical
+5/25/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/25/21,Bass,Shot in the Dark,Ozzy Osbourne,Rock
+5/25/21,Bass,Psycho Killer,Talking Heads,Rock
+5/25/21,Bass,Killing in the Name,Rage Against the Machine,Rock
+5/25/21,Bass,OG Stuff,Me,My Composition
+5/26/21,Banjo,Sweet City Woman,The Stampeders,Folk
+5/26/21,Electric Guitar,The Look,Roxette,Rock
+5/26/21,Bass,Psycho Killer,Talking Heads,Rock
+5/26/21,Bass,December 1963,Frankie Valli and the Four Seasons,Pop
+5/26/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/26/21,Piano,Raindrop Prelude,Chopin,Classical
+5/27/21,Piano,Moonlight Sonata,Beethoven,Classical
+5/27/21,Piano,Piano Sonata no. 3,Mozart,Classical
+5/28/21,Electric Guitar,Pretender,Foo Fighters,Rock
+5/28/21,Electric Guitar,Carry On Wayward Son,Kansas,Rock
+5/28/21,Electric Guitar,25 or 6 to 4,Chicago,Rock
+5/28/21,Bass,Psycho Killer,Talking Heads,Rock
+5/29/21,Piano,Piano Sonata no. 3,Mozart,Classical
+5/29/21,Piano,OG Stuff,Me,My Composition
+5/30/21,Bass,Killing in the Name,Rage Against the Machine,Rock
+5/30/21,Bass,Rasputin,Boney M,Pop
+5/30/21,Bass,Come As You Are,Nirvana,Rock
+5/30/21,Banjo,Agape,Bears Den,Folk
+5/30/21,Banjo,Let Her Go,Passenger,Folk
+5/31/21,Electric Guitar,Psycho Killer,Talking Heads,Rock
+5/31/21,Electric Guitar,Easy Lover,Philip Bailey,Pop
+5/31/21,Piano,Piano Sonata no. 3,Mozart,Classical
+5/31/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+5/31/21,Piano,OG Stuff,Me,My Composition
+6/1/21,Banjo,Agape,Bears Den,Folk
+6/1/21,Banjo,Rasputin,Boney M,Pop
+6/1/21,Electric Guitar,Psycho Killer,Talking Heads,Rock
+6/1/21,Electric Guitar,Easy Lover,Philip Bailey,Pop
+6/1/21,Piano,Moonlight Sonata,Beethoven,Classical
+6/2/21,Bass,Electric Feel,MGMT,Indie
+6/2/21,Bass,A-punk,Vampire Weekend,Indie
+6/2/21,Electric Guitar,Knights of Cydonia,Muse,Rock
+6/2/21,Electric Guitar,Hungry Like the Wolf,Duran Duran,Rock
+6/2/21,Electric Guitar,Every Breath You Take,The Police,Rock
+6/2/21,Electric Guitar,Easy Lover,Philip Bailey,Pop
+6/3/21,Piano,Wild Rider Op. 68 No. 8,Schumann,Classical
+6/3/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/3/21,Piano,Tempest Sonata,Beethoven,Classical
+6/3/21,Electric Guitar,Every Breath You Take,The Police,Rock
+6/3/21,Electric Guitar,Do I Wanna Know,Arctic Monkeys,Indie
+6/3/21,Electric Guitar,Scar Tissue,Red Hot Chili Peppers,Rock
+6/4/21,Piano,Wild Rider Op. 68 No. 8,Schumann,Classical
+6/4/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/4/21,Electric Guitar,Even Flow,Pearl Jam,Rock
+6/5/21,Electric Guitar,Living on a Prayer,Bon Jovi,Rock
+6/5/21,Electric Guitar,The Final Countdown,Europe,Rock
+6/5/21,Electric Guitar,Electric Feel,MGMT,Indie
+6/5/21,Electric Guitar,Every Breath You Take,The Police,Rock
+6/5/21,Electric Guitar,Killing in the Name,Rage Against the Machine,Rock
+6/5/21,Piano,Wild Rider Op. 68 No. 8,Schumann,Classical
+6/5/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/5/21,Piano,Moonlight Sonata,Beethoven,Classical
+6/6/21,Bass,Last Train to London,Electric Light Orchestra,Rock
+6/6/21,Bass,Psycho Killer,Talking Heads,Rock
+6/6/21,Bass,Knights of Cydonia,Muse,Rock
+6/6/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/7/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/8/21,Electric Guitar,Killing in the Name,Rage Against the Machine,Rock
+6/9/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/9/21,Piano,OG Stuff,Me,My Composition
+6/10/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/10/21,Piano,OG Stuff,Me,My Composition
+6/10/21,Electric Guitar,OG Stuff,Me,My Composition
+6/10/21,Electric Guitar,Every Breath You Take,The Police,Rock
+6/10/21,Electric Guitar,Killing in the Name,Rage Against the Machine,Rock
+6/10/21,Electric Guitar,Electric Feel,MGMT,Indie
+6/10/21,Bass,Rasputin,Boney M,Pop
+6/10/21,Bass,Last Train to London,Electric Light Orchestra,Rock
+6/10/21,Bass,Electric Feel,MGMT,Indie
+6/10/21,Banjo,Agape,Bears Den,Folk
+6/10/21,Banjo,Home,Edward Sharpe & the Magnetic Zeros,Folk
+6/11/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/11/21,Electric Guitar,Wheel in the Sky,Journey,Rock
+6/11/21,Electric Guitar,Knights of Cydonia,Muse,Rock
+6/11/21,Electric Guitar,Pressure,Muse,Rock
+6/12/21,Electric Guitar,Wheel in the Sky,Journey,Rock
+6/12/21,Electric Guitar,Kickstart My Heart,Motley Crue,Metal
+6/12/21,Electric Guitar,Killing in the Name,Rage Against the Machine,Rock
+6/12/21,Electric Guitar,Decode,Paramore,Rock
+6/12/21,Piano,Moonlight Sonata,Beethoven,Classical
+6/13/21,Electric Guitar,Wheel in the Sky,Journey,Rock
+6/13/21,Electric Guitar,Carry On Wayward Son,Kansas,Rock
+6/13/21,Acoustic Guitar,Zombie,The Cranberries,Rock
+6/13/21,Acoustic Guitar,Waterloo,ABBA,Pop
+6/13/21,Acoustic Guitar,Wait for Me,Motopony,Folk
+6/13/21,Piano,Piano Sonata no. 3,Mozart,Classical
+6/13/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+6/14/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/14/21,Electric Guitar,For Whom The Bell Tolls,Metallica,Metal
+6/14/21,Electric Guitar,Wheel in the Sky,Journey,Rock
+6/14/21,Electric Guitar,Living on a Prayer,Bon Jovi,Rock
+6/14/21,Electric Guitar,Reptilia,The Strokes,Indie
+6/15/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/16/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/16/21,Banjo,Broken Crown,Mumford and Sons,Folk
+6/16/21,Piano,Moonlight Sonata,Beethoven,Classical
+6/16/21,Piano,OG Stuff,Me,My Composition
+6/17/21,Piano,Moonlight Sonata,Beethoven,Classical
+6/17/21,Electric Guitar,Carry On Wayward Son,Kansas,Rock
