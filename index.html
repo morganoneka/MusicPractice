@@ -21,7 +21,20 @@
  <div class="row">
    <div class="col-sm-12">
      <h3>Introduction</h3>
-     <p>Lorem ipsum dolor..</p>
+     <p>In 2020, after several years of being in a bit of a plateau with my musical skills, I set a New Year's Resolution to practice music in some form every day. I started tracking what I was practicing in early March as a way to keep track of my progress. </p>
+     <p>Some additional notes:
+       <ul>
+         <li>A song is considered <i>practiced</i> if I practice for more than ~ 15 minutes. Basically I need to make meaningful progress into playing it better for it to count. But beyond that, time spent practicing is not included. The time spent praciticing a song in a given day could be 15 minutes or 4 hours. </li>
+         <li>Genre is subjective. A lot of artists toe the line between genres. I'm really just curious about overall trends so if I call an artist "rock" when they're really "metal"... oh well.</li>
+       </ul>
+     </p>
+   </div>
+ </div>
+
+
+ <div class="row">
+   <div id="FullHeatmap">
+     <svg id="svg"></svg>
    </div>
  </div>
 
@@ -33,17 +46,40 @@
      <div class="col-sm-2">Banjo</div>
  </div> -->
 
+<!-- recent playing --->
  <div class="row">
-   <div class="col-sm-12">
+   <div class="col-sm-9" id="recent_plays_info">
      <h3>What have I been playing recently?</h3>
-     <button type="button" id="recent_piano" class="btn btn-primary">Piano</button>
+     <button type="button" id="recent_piano" class="btn btn-primary active">Piano</button>
      <button type="button" id="recent_eg" class="btn btn-primary">Electric Guitar</button>
      <button type="button" id="recent_ag" class="btn btn-primary">Acoustic Guitar</button>
      <button type="button" id="recent_bass" class="btn btn-primary">Bass</button>
      <button type="button" id="recent_banjo" class="btn btn-primary">Banjo</button>
+     <button type="button" id="recent_ukulele" class="btn btn-primary">Ukulele</button>
+   </div>
+   <div class="form-group col-sm-3">
+   <label>Number of days:</label>
+    <input type="email" class="form-control" id="genreDayInput" placeholder="90">
+ </div>
+ </div>
+ <br>
+
+ <div class="row" id="piano_recent">
+ </div>
+
+ <div class="row">
+   <div class="col-sm-12" id="top_genres_info">
+     <h3>What genres are most popular for each instrument?</h3>
+     <button type="button" id="genre_piano" class="btn btn-primary">Piano</button>
+     <button type="button" id="genre_eg" class="btn btn-primary">Electric Guitar</button>
+     <button type="button" id="genre_ag" class="btn btn-primary">Acoustic Guitar</button>
+     <button type="button" id="genre_bass" class="btn btn-primary">Bass</button>
+     <button type="button" id="genre_banjo" class="btn btn-primary">Banjo</button>
+     <button type="button" id="genre_ukulele" class="btn btn-primary">Ukulele</button>
    </div>
  </div>
- <div class="row" id="piano_recent">
+ <br>
+ <div class="row" id="genre_count">
  </div>
 
 </div>

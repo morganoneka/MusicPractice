@@ -132,7 +132,6 @@ Date,Instrument,Song,Artist,Genre
 4/4/20,Electric Guitar,Telescope,Yellowcard,Rock
 4/4/20,Electric Guitar,Is Nowhere,Mayday Parade,Rock
 4/4/20,Electric Guitar,Decode,Paramore,Rock
-4/4/20,Bass,Fingering Exercises,N/A,Technique
 4/4/20,Bass,This Must Be the Place,Talking Heads,Rock
 4/4/20,Piano,Moonlight Sonata,Beethoven,Classical
 4/4/20,Piano,Pompeii,Bastille,Indie
@@ -174,7 +173,6 @@ Date,Instrument,Song,Artist,Genre
 4/11/20,Piano,Moonlight Sonata,Beethoven,Classical
 4/11/20,Electric Guitar,All Star,Smash Mouth,Rock
 4/11/20,Electric Guitar,Caraphernelia,Pierce the Veil,Rock
-4/11/20,Electric Guitar,Scales,N/A,Technique
 4/12/20,Piano,Moonlight Sonata,Beethoven,Classical
 4/12/20,Ukulele,Animal I Have Become,Three Days Grace,Rock
 4/12/20,Electric Guitar,Break,Three Days Grace,Rock
@@ -461,7 +459,6 @@ Date,Instrument,Song,Artist,Genre
 7/8/20,Trumpet,Scales,N/A,Technique
 7/9/20,Trumpet,Scales,N/A,Technique
 7/10/20,Ukulele,Hey There Delilah,Plain White T's,Pop
-7/10/20,Ukulele,Scales,N/A,Technique
 7/11/20,Ukulele,I'm Yours,Jason Mraz,Pop
 7/12/20,Ukulele,I'm Not Angry Anymore,Paramore,Rock
 7/13/20,Piano,Waterfall Etude,Chopin,Classical
@@ -1421,3 +1418,72 @@ Date,Instrument,Song,Artist,Genre
 6/16/21,Piano,OG Stuff,Me,My Composition
 6/17/21,Piano,Moonlight Sonata,Beethoven,Classical
 6/17/21,Electric Guitar,Carry On Wayward Son,Kansas,Rock
+6/18/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/18/21,Electric Guitar,Black Sails Theme,Bear McCreary,Soundtrack
+6/18/21,Electric Guitar,Wheel in the Sky,Journey,Rock
+6/19/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/19/21,Piano,Moonlight Sonata,Beethoven,Classical
+6/20/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/20/21,Piano,Moonlight Sonata,Beethoven,Classical
+6/20/21,Bass,Last Train to London,Electric Light Orchestra,Rock
+6/21/21,Bass,Rasputin,Boney M,Pop
+6/21/21,Bass,Gimme! Gimme! Gimme!,ABBA,Pop
+6/21/21,Bass,Last Train to London,Electric Light Orchestra,Rock
+6/21/21,Piano,OG Stuff,Me,My Composition
+6/22/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/23/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/23/21,Acoustic Guitar,Waterloo,ABBA,Pop
+6/23/21,Acoustic Guitar,Northern Downpour,Panic at the Disco,Pop
+6/23/21,Acoustic Guitar,Yellow,Coldplay,Rock
+6/23/21,Electric Guitar,Decode,Paramore,Rock
+6/24/21,Piano,OG Stuff,Me,My Composition
+6/24/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/24/21,Electric Guitar,Decode,Paramore,Rock
+6/24/21,Electric Guitar,Misery Business,Paramore,Rock
+6/24/21,Electric Guitar,Unchained,Van Halen,Rock
+6/24/21,Electric Guitar,Almost Easy,Avenged Sevenfold,Metal
+6/25/21,Piano,OG Stuff,Me,My Composition
+6/25/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/26/21,Piano,OG Stuff,Me,My Composition
+6/26/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/27/21,Piano,OG Stuff,Me,My Composition
+6/27/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/27/21,Electric Guitar,Easy Lover,Philip Bailey,Pop
+6/27/21,Electric Guitar,OG Stuff,Me,My Composition
+6/27/21,Bass,OG Stuff,Me,My Composition
+6/28/21,Piano,OG Stuff,Me,My Composition
+6/28/21,Electric Guitar,American Idiot,Green Day,Rock
+6/28/21,Electric Guitar,In Too Deep,Sum 41,Rock
+6/28/21,Electric Guitar,YYZ,Rush,Rock
+6/28/21,Bass,YYZ,Rush,Rock
+6/29/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/29/21,Bass,YYZ,Rush,Rock
+6/29/21,Bass,A Town Called Malice,The Jam,Rock
+6/29/21,Bass,Psycho Killer,Talking Heads,Rock
+6/29/21,Bass,Last Train to London,Electric Light Orchestra,Rock
+6/29/21,Ukulele,Brown Eyed Girl,Van Morrison,Rock
+6/29/21,Ukulele,Chiquitita,ABBA,Pop
+6/30/21,Piano,Sonata K. 113,Scarlatti,Classical
+6/30/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+6/30/21,Piano,OG Stuff,Me,My Composition
+7/1/21,Electric Guitar,Last Train to London,Electric Light Orchestra,Rock
+7/1/21,Electric Guitar,YYZ,Rush,Rock
+7/1/21,Ukulele,Brown Eyed Girl,Van Morrison,Rock
+7/1/21,Ukulele,Chiquitita,ABBA,Pop
+7/2/21,Ukulele,Brown Eyed Girl,Van Morrison,Rock
+7/2/21,Ukulele,Chiquitita,ABBA,Pop
+7/2/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+7/2/21,Piano,Moonlight Sonata,Beethoven,Classical
+7/2/21,Piano,OG Stuff,Me,My Composition
+7/3/21,Electric Guitar,OG Stuff,Me,My Composition
+7/3/21,Electric Guitar,YYZ,Rush,Rock
+7/3/21,Electric Guitar,In Too Deep,Sum 41,Rock
+7/3/21,Ukulele,Waltzing Matilda,N/A,Traditional
+7/3/21,Ukulele,The Office Theme,Jay Ferguson,Soundtrack
+7/3/21,Piano,Moonlight Sonata,Beethoven,Classical
+7/3/21,Piano,Sonata K. 113,Scarlatti,Classical
+7/4/21,Ukulele,Waltzing Matilda,N/A,Traditional
+7/4/21,Ukulele,The Office Theme,Jay Ferguson,Soundtrack
+7/4/21,Ukulele,Chiquitita,ABBA,Pop
+7/4/21,Bass,Honey Honey,ABBA,Pop
+7/4/21,Bass,Rasputin,Boney M,Pop
