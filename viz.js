@@ -21,6 +21,23 @@ function nest_by_day(my_data){
     }).entries(my_data);
 }
 
+function nest_by_month(my_data){
+  return d3.nest()
+    .key(function (d) {
+      date = new Date(d.PracticeDate);
+      // shoutout: https://www.geeksforgeeks.org/how-to-get-the-first-and-last-date-of-current-month-using-javascript/
+      rounded_date = new Date(date.getFullYear(), date.getMonth(), 1);
+      return rounded_date;
+    })
+    .rollup(function(d){
+      // https://stackoverflow.com/questions/29422792/how-to-get-the-total-number-of-rows-with-particular-value-in-json-file-in-d3-js
+      total = d.reduce(function(count, entry) {
+          return count + 1;
+      }, 0);
+      return total;
+    }).entries(my_data);
+}
+
 function nest_by_piece(my_data){
   return d3.nest()
     .key(function (d) {
@@ -376,3 +393,45 @@ d3.select("#genre_ukulele").on("click", function () {
   d3.select("#top_genres_info").selectAll("button").classed("active", false);
   d3.select("#genre_ukulele").classed("active", true);
 });
+
+var my_data = d3.csv("https://raw.githubusercontent.com/morganoneka/MusicPractice/main/data/TranscribedData.csv",
+
+// tell d3 how to format the data
+function(row){
+  return {PracticeDate : row.Date, Instrument : row.Instrument, Song: row.Song, Artist: row.Artist, Genre: row.Genre};
+},
+
+// what to do when the data is loaded
+function(data){
+
+  // this is where we'll gather the info for plotly
+  var line_data = [
+
+  ];
+
+  // iterate over the different instruments
+  for (const instrument of ['Piano', 'Electric Guitar', 'Acoustic Guitar',
+'Bass', 'Banjo', 'Ukulele']){
+    trace = {
+      x: [],
+      y: [],
+      type: 'scatter',
+      name: instrument
+    }
+
+    // filter by instrument then nest based on month
+    var recent_nested = nest_by_month(get_by_instrument(data, instrument));
+
+
+    for (const element of recent_nested){
+      console.log(element);
+      trace.x.push(element.key);
+      trace.y.push(element.value);
+    }
+
+    line_data.push(trace);
+  }
+
+
+  Plotly.newPlot('linechart', line_data);
+  })

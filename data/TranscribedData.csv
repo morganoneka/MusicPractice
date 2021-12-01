@@ -634,7 +634,7 @@ Date,Instrument,Song,Artist,Genre
 9/15/20,Electric Guitar,Knights of Cydonia,Muse,Rock
 9/15/20,Electric Guitar,Should I Stay or Should I Go,The Clash,Rock
 9/15/20,Electric Guitar,That's What You Get,Paramore,Rock
-9/16/20,Bass,Super Freak,Rick James,Pop
+9/16/20,Bass,Super Freak,Rick James,Funk
 9/16/20,Bass,Hysteria,Muse,Rock
 9/16/20,Piano,Pavane Pour Une Infante Defunte,Ravel,Classical
 9/17/20,Electric Guitar,Hysteria,Muse,Rock
@@ -1603,3 +1603,339 @@ Date,Instrument,Song,Artist,Genre
 8/5/21,Electric Guitar,Living on a Prayer,Bon Jovi,Rock
 8/5/21,Electric Guitar,Don't Fear the Reaper,Blue Oyster Cult,Rock
 8/5/21,Piano,OG Stuff,Me,My Composition
+8/6/21,Piano,Moonlight Sonata,Beethoven,Classical
+8/6/21,Piano,OG Stuff,Me,My Composition
+8/6/21,Banjo,Sweet City Woman,The Stampeders,Folk
+8/6/21,Banjo,Stolen Dance,Milky Chance,Pop
+8/6/21,Ukulele,Take a Chance on Me,ABBA,Pop
+8/6/21,Ukulele,The Office Theme,Jay Ferguson,Soundtrack
+8/7/21,Electric Guitar,Don't Fear the Reaper,Blue Oyster Cult,Rock
+8/7/21,Electric Guitar,Found Out About You,Gin Blossoms,Rock
+8/8/21,Piano,Tempest Sonata,Beethoven,Classical
+8/8/21,Electric Guitar,Found Out About You,Gin Blossoms,Rock
+8/8/21,Electric Guitar,Every Breath You Take,The Police,Rock
+8/8/21,Electric Guitar,Psycho Killer,Talking Heads,Rock
+8/8/21,Ukulele,Chiquitita,ABBA,Pop
+8/8/21,Ukulele,The Office Theme,Jay Ferguson,Soundtrack
+8/9/21,Electric Guitar,Found Out About You,Gin Blossoms,Rock
+8/9/21,Electric Guitar,Turn to Stone,Electric Light Orchestra,Rock
+8/9/21,Bass,Last Train to London,Electric Light Orchestra,Rock
+8/9/21,Bass,Psycho Killer,Talking Heads,Rock
+8/9/21,Piano,Sonata K. 113,Scarlatti,Classical
+8/10/21,Piano,Sonata K. 113,Scarlatti,Classical
+8/10/21,Piano,OG Stuff,Me,My Composition
+8/10/21,Electric Guitar,Turn to Stone,Electric Light Orchestra,Rock
+8/11/21,Ukulele,Chiquitita,ABBA,Pop
+8/11/21,Ukulele,The Office Theme,Jay Ferguson,Soundtrack
+8/11/21,Electric Guitar,Turn to Stone,Electric Light Orchestra,Rock
+8/11/21,Electric Guitar,Killing in the Name,Rage Against the Machine,Rock
+8/11/21,Piano,OG Stuff,Me,My Composition
+8/12/21,Piano,First Arabesque,Debussy,Classical
+8/12/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+8/12/21,Electric Guitar,Turn to Stone,Electric Light Orchestra,Rock
+8/12/21,Electric Guitar,Hysteria,Def Leppard,Metal
+8/12/21,Electric Guitar,Pour Some Sugar on Me,Def Leppard,Metal
+8/12/21,Electric Guitar,Psycho Killer,Talking Heads,Rock
+8/12/21,Electric Guitar,Found Out About You,Gin Blossoms,Rock
+8/13/21,Electric Guitar,Found Out About You,Gin Blossoms,Rock
+8/13/21,Electric Guitar,Pour Some Sugar on Me,Def Leppard,Metal
+8/13/21,Piano,OG Stuff,Me,My Composition
+8/14/21,Piano,Sonata K. 113,Scarlatti,Classical
+8/14/21,Electric Guitar,Turn to Stone,Electric Light Orchestra,Rock
+8/14/21,Electric Guitar,Hysteria,Def Leppard,Metal
+8/15/21,Ukulele,Chiquitita,ABBA,Pop
+8/15/21,Ukulele,The Office Theme,Jay Ferguson,Soundtrack
+8/15/21,Ukulele,Summertime,Gershwin,Jazz
+8/16/21,Piano,OG Stuff,Me,My Composition
+8/16/21,Banjo,26,Caamp,Folk
+8/16/21,Banjo,Unwell,Matchbox Twenty,Rock
+8/16/21,Banjo,Skinny Love,Bon Iver,Folk
+8/16/21,Bass,Rasputin,Boney M,Pop
+8/16/21,Bass,Californication,Red Hot Chili Peppers,Rock
+8/16/21,Electric Guitar,Dream On,Aerosmith,Rock
+8/16/21,Acoustic Guitar,Never Mind,Foster the People,Indie
+8/16/21,Ukulele,Riverside,Agnes Obel,Pop
+8/16/21,Ukulele,Summertime,Gershwin,Jazz
+8/16/21,Piano,Sonata 8 Pathetique,Beethoven,Classical
+8/17/21,Bass,Californication,Red Hot Chili Peppers,Rock
+8/17/21,Bass,A-punk,Vampire Weekend,Indie
+8/17/21,Electric Guitar,A-punk,Vampire Weekend,Indie
+8/17/21,Electric Guitar,OG Stuff,Me,My Composition
+8/17/21,Banjo,26,Caamp,Folk
+8/17/21,Banjo,Ho Hey,The Lumineers,Folk
+8/18/21,Ukulele,Riverside,Agnes Obel,Pop
+8/18/21,Ukulele,Waltzing Matilda,N/A,Traditional
+8/19/21,Electric Guitar,Hysteria,Def Leppard,Metal
+8/19/21,Electric Guitar,Don't Fear the Reaper,Blue Oyster Cult,Rock
+8/19/21,Electric Guitar,The Chain,Fleetwood Mac,Rock
+8/19/21,Ukulele,Riverside,Agnes Obel,Pop
+8/19/21,Ukulele,No Surprises,Radiohead,Rock
+8/19/21,Banjo,Africa,TOTO,Rock
+8/19/21,Banjo,Cello Suite #1 in G Major,Bach,Classical
+8/19/21,Bass,Pumped Up Kicks,Foster the People,Indie
+8/19/21,Bass,Stayin Alive,Bee Gees,Disco
+8/19/21,Piano,Sonata 8 Pathetique,Beethoven,Classical
+8/20/21,Banjo,Cello Suite #1 in G Major,Bach,Classical
+8/20/21,Piano,OG Stuff,Me,My Composition
+8/21/21,Piano,OG Stuff,Me,My Composition
+8/21/21,Electric Guitar,Sharp Dressed Man,ZZ Top,Rock
+8/21/21,Banjo,Agape,Bears Den,Folk
+8/21/21,Banjo,26,Caamp,Folk
+8/21/21,Banjo,Cello Suite #1 in G Major,Bach,Classical
+8/21/21,Ukulele,No Surprises,Radiohead,Rock
+8/22/21,Banjo,Dreams,Fleetwood Mac,Rock
+8/22/21,Electric Guitar,Sharp Dressed Man,ZZ Top,Rock
+8/22/21,Electric Guitar,Caraphernelia,Pierce the Veil,Rock
+8/23/21,Electric Guitar,Caraphernelia,Pierce the Veil,Rock
+8/23/21,Electric Guitar,Ain't Talkin Bout Love,Van Halen,Rock
+8/23/21,Electric Guitar,Ain't It Fun,Paramore,Rock
+8/23/21,Piano,Sonata 8 Pathetique,Beethoven,Classical
+8/24/21,Ukulele,Chiquitita,ABBA,Pop
+8/24/21,Ukulele,No Surprises,Radiohead,Rock
+8/24/21,Banjo,Cello Suite #1 in G Major,Bach,Classical
+8/24/21,Bass,Californication,Red Hot Chili Peppers,Rock
+8/24/21,Bass,YYZ,Rush,Rock
+8/25/21,Piano,Sonata 8 Pathetique,Beethoven,Classical
+8/25/21,Banjo,Dreams,Fleetwood Mac,Rock
+8/26/21,Banjo,Cello Suite #1 in G Major,Bach,Classical
+8/26/21,Electric Guitar,YYZ,Rush,Rock
+8/26/21,Electric Guitar,Thank You for the Venom,My Chemical Romance,Rock
+8/27/21,Piano,Sonata 8 Pathetique,Beethoven,Classical
+8/27/21,Piano,Moonlight Sonata,Beethoven,Classical
+8/28/21,Ukulele,Sweet City Woman,The Stampeders,Folk
+8/28/21,Ukulele,Chiquitita,ABBA,Pop
+8/28/21,Electric Guitar,Thank You for the Venom,My Chemical Romance,Rock
+8/29/21,Electric Guitar,Pour Some Sugar on Me,Def Leppard,Metal
+8/29/21,Electric Guitar,Thank You for the Venom,My Chemical Romance,Rock
+8/29/21,Electric Guitar,Thunderstruck,AC/DC,Metal
+8/29/21,Piano,OG Stuff,Me,My Composition
+8/30/21,Ukulele,Chiquitita,ABBA,Pop
+8/30/21,Ukulele,This Must Be the Place,Talking Heads,Rock
+8/31/21,Piano,OG Stuff,Me,My Composition
+9/1/21,Piano,Moonlight Sonata,Beethoven,Classical
+9/1/21,Ukulele,For the Widows in Paradise,Sufjan Stevens,Folk
+9/1/21,Ukulele,A Girl A Boy and a Graveyard,Jeremy Messersmith,Folk
+9/2/21,Piano,Moonlight Sonata,Beethoven,Classical
+9/2/21,Bass,YYZ,Rush,Rock
+9/2/21,Bass,Honey Honey,ABBA,Pop
+9/2/21,Bass,Last Train to London,Electric Light Orchestra,Rock
+9/2/21,Electric Guitar,Thank You for the Venom,My Chemical Romance,Rock
+9/3/21,Piano,Moonlight Sonata,Beethoven,Classical
+9/4/21,Piano,Moonlight Sonata,Beethoven,Classical
+9/4/21,Piano,OG Stuff,Me,My Composition
+9/5/21,Electric Guitar,Thank You for the Venom,My Chemical Romance,Rock
+9/6/21,Piano,Sonata K. 113,Scarlatti,Classical
+9/6/21,Electric Guitar,Thank You for the Venom,My Chemical Romance,Rock
+9/6/21,Electric Guitar,Turn to Stone,Electric Light Orchestra,Rock
+9/6/21,Electric Guitar,The Pretender,Foo Fighters,Rock
+9/7/21,Piano,Sonata K. 113,Scarlatti,Classical
+9/8/21,Piano,Sonata K. 113,Scarlatti,Classical
+9/8/21,Ukulele,Mamma Mia,ABBA,Pop
+9/8/21,Ukulele,Super Mario Bros Theme,Koji Kondo,Soundtrack
+9/8/21,Ukulele,Sonata no. 1 Presto,Bach,Classical
+9/9/21,Ukulele,Super Mario Bros Theme,Koji Kondo,Soundtrack
+9/10/21,Piano,Sonata K. 113,Scarlatti,Classical
+9/11/21,Ukulele,Super Mario Bros Theme,Koji Kondo,Soundtrack
+9/11/21,Electric Guitar,Thank You for the Venom,My Chemical Romance,Rock
+9/11/21,Piano,Sonata K. 113,Scarlatti,Classical
+9/11/21,Piano,Well-Tempered Clavier,Bach,Classical
+9/12/21,Electric Guitar,The Pretender,Foo Fighters,Rock
+9/12/21,Banjo,Cello Suite #1 in G Major,Bach,Classical
+9/12/21,Ukulele,Super Mario Bros Theme,Koji Kondo,Soundtrack
+9/12/21,Ukulele,Sonata no. 1 Presto,Bach,Classical
+9/12/21,Piano,Sonata K. 113,Scarlatti,Classical
+9/12/21,Piano,Well-Tempered Clavier,Bach,Classical
+9/12/21,Piano,OG Stuff,Me,My Composition
+9/13/21,Piano,Sonata K. 113,Scarlatti,Classical
+9/13/21,Ukulele,Super Mario Bros Theme,Koji Kondo,Soundtrack
+9/13/21,Ukulele,Sonata no. 1 Presto,Bach,Classical
+9/14/21,Piano,OG Stuff,Me,My Composition
+9/14/21,Piano,Sonata K. 113,Scarlatti,Classical
+9/15/21,Bass,Panic Switch,Silversun Pickups,Rock
+9/15/21,Piano,OG Stuff,Me,My Composition
+9/16/21,Piano,Well-Tempered Clavier,Bach,Classical
+9/16/21,Piano,Moonlight Sonata,Beethoven,Classical
+9/17/21,Electric Guitar,Hysteria,Def Leppard,Rock
+9/17/21,Electric Guitar,Turn to Stone,Electric Light Orchestra,Rock
+9/17/21,Electric Guitar,Abacadabra,Steve Miller Band,Rock
+9/17/21,Electric Guitar,Sharp Dressed Man,ZZ Top,Rock
+9/17/21,Bass,Rio ,Duran Duran,Rock
+9/17/21,Bass,Last Train to London,Electric Light Orchestra,Rock
+9/17/21,Piano,Well-Tempered Clavier,Bach,Classical
+9/17/21,Piano,Moonlight Sonata,Beethoven,Classical
+9/18/21,Piano,Well-Tempered Clavier,Bach,Classical
+9/18/21,Piano,Moonlight Sonata,Beethoven,Classical
+9/18/21,Piano,OG Stuff,Me,My Composition
+9/18/21,Banjo,Cello Suite #1 in G Major,Bach,Classical
+9/19/21,Electric Guitar,Sharp Dressed Man,ZZ Top,Rock
+9/19/21,Electric Guitar,Kryptonite,Three Doors Down,Rock
+9/19/21,Electric Guitar,OG Stuff,Me,My Composition
+9/19/21,Banjo,Cello Suite #1 in G Major,Bach,Classical
+9/19/21,Ukulele,No Surprises,Radiohead,Rock
+9/19/21,Ukulele,Super Mario Bros Theme,Koji Kondo,Soundtrack
+9/19/21,Bass,Somebody Told Me,The Killers,Rock
+9/19/21,Piano,Moonlight Sonata,Beethoven,Classical
+9/20/21,Piano,OG Stuff,Me,My Composition
+9/21/21,Ukulele,Super Mario Bros Theme,Koji Kondo,Soundtrack
+9/21/21,Ukulele,Take a Chance on Me,ABBA,Pop
+9/22/21,Piano,Moonlight Sonata,Beethoven,Classical
+9/22/21,Piano,Sonata K. 113,Scarlatti,Classical
+9/23/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+9/23/21,Ukulele,The Entertainer,Scott Joplin,Ragtime
+9/24/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+9/25/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+9/26/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+9/27/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+9/27/21,Piano,Moonlight Sonata,Beethoven,Classical
+9/27/21,Electric Guitar,Helicopter,Bloc Party,Rock
+9/27/21,Electric Guitar,Easy Lover,Phillip Bailey & Phil Collins,Pop
+9/28/21,Piano,Moonlight Sonata,Beethoven,Classical
+9/28/21,Electric Guitar,Easy Lover,Phillip Bailey & Phil Collins,Pop
+9/28/21,Electric Guitar,YYZ,Rush,Rock
+9/28/21,Banjo,Cello Suite #1 in G Major,Bach,Classical
+9/29/21,Piano,Moonlight Sonata,Beethoven,Classical
+9/30/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/1/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/2/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/2/21,Bass,Dangerous,Big Data,Indie
+10/2/21,Bass,Night On Fire,VHS or Beta,Indie
+10/3/21,Electric Guitar,Easy Lover,Phillip Bailey & Phil Collins,Pop
+10/3/21,Electric Guitar,YYZ,Rush,Rock
+10/3/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/3/21,Piano,OG Stuff,Me,My Composition
+10/4/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/4/21,Piano,OG Stuff,Me,My Composition
+10/5/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/5/21,Piano,Sonata K. 113,Scarlatti,Classical
+10/6/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/7/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/8/21,Piano,OG Stuff,Me,My Composition
+10/8/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/8/21,Piano,Sonata K. 113,Scarlatti,Classical
+10/9/21,Electric Guitar,Are You Gonna Be My Girl?,Jet,Indie
+10/9/21,Piano,Sonata K. 113,Scarlatti,Classical
+10/9/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/9/21,Piano,OG Stuff,Me,My Composition
+10/10/21,Piano,Sonata K. 113,Scarlatti,Classical
+10/10/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/10/21,Bass,Electric Feel,MGMT,Indie
+10/11/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/12/21,Piano,Sonata K. 113,Scarlatti,Classical
+10/12/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/13/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/13/21,Piano,OG Stuff,Me,My Composition
+10/14/21,Electric Guitar,OG Stuff,Me,My Composition
+10/14/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/14/21,Piano,Waterfall Etude,Chopin,Classical
+10/14/21,Piano,OG Stuff,Me,My Composition
+10/15/21,Electric Guitar,Electric Feel,MGMT,Indie
+10/15/21,Electric Guitar,Knights of Cydonia,Muse,Rock
+10/15/21,Electric Guitar,OG Stuff,Me,My Composition
+10/15/21,Piano,OG Stuff,Me,My Composition
+10/16/21,Electric Guitar,Almost Easy,Avenged Sevenfold,Metal
+10/16/21,Electric Guitar,Easy Lover,Phillip Bailey & Phil Collins,Pop
+10/16/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/16/21,Piano,Waterfall Etude,Chopin,Classical
+10/17/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/17/21,Piano,Waterfall Etude,Chopin,Classical
+10/17/21,Electric Guitar,Almost Easy,Avenged Sevenfold,Metal
+10/17/21,Electric Guitar,I Wanna Be Your Slave,Maneskin,Rock
+10/17/21,Electric Guitar,Easy Lover,Phillip Bailey & Phil Collins,Pop
+10/17/21,Electric Guitar,Reptilia,The Strokes,Indie
+10/18/21,Banjo,Cello Suite #1 in G Major,Bach,Classical
+10/18/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/18/21,Piano,Sonata K. 113,Scarlatti,Classical
+10/18/21,Piano,Well-Tempered Clavier,Bach,Classical
+10/19/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/19/21,Piano,Nocturne in F# minor,Rachmaninov,Classical
+10/19/21,Piano,12 Easy Pieces for Piano,Haydn,Classical
+10/19/21,Bass,Reptilia,The Strokes,Indie
+10/20/21,Piano,12 Easy Pieces for Piano,Haydn,Classical
+10/20/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/21/21,Piano,Raindrop Prelude,Chopin,Classical
+10/22/21,Electric Guitar,Electric Feel,MGMT,Indie
+10/22/21,Electric Guitar,Sharp Dressed Man,ZZ Top,Rock
+10/22/21,Piano,Raindrop Prelude,Chopin,Classical
+10/22/21,Piano,OG Stuff,Me,My Composition
+10/23/21,Piano,Raindrop Prelude,Chopin,Classical
+10/24/21,Piano,Phantasie no. 3,Mozart,Classical
+10/24/21,Electric Guitar,Killing in the Name,Rage Against the Machine,Rock
+10/24/21,Electric Guitar,The Chain,Fleetwood Mac,Rock
+10/25/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/25/21,Piano,Raindrop Prelude,Chopin,Classical
+10/26/21,Piano,Raindrop Prelude,Chopin,Classical
+10/26/21,Piano,OG Stuff,Me,My Composition
+10/27/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/27/21,Piano,Raindrop Prelude,Chopin,Classical
+10/27/21,Piano,Sonata K. 113,Scarlatti,Classical
+10/28/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/28/21,Piano,Sonata K. 113,Scarlatti,Classical
+10/28/21,Piano,Sonata 8 Pathetique,Beethoven,Classical
+10/29/21,Piano,Sonata 8 Pathetique,Beethoven,Classical
+10/29/21,Piano,OG Stuff,Me,My Composition
+10/30/21,Piano,Sonata 8 Pathetique,Beethoven,Classical
+10/30/21,Piano,Raindrop Prelude,Chopin,Classical
+10/30/21,Piano,OG Stuff,Me,My Composition
+10/30/21,Piano,Moonlight Sonata,Beethoven,Classical
+10/31/21,Piano,Nocturne Op. 36,Faure,Classical
+11/1/21,Piano,Moonlight Sonata,Beethoven,Classical
+11/1/21,Piano,Nocturne Op. 36,Faure,Classical
+11/1/21,Electric Guitar,The Chain,Fleetwood Mac,Rock
+11/2/21,Piano,Moonlight Sonata,Beethoven,Classical
+11/2/21,Piano,Nocturne Op. 36,Faure,Classical
+11/3/21,Piano,Moonlight Sonata,Beethoven,Classical
+11/3/21,Piano,Raindrop Prelude,Chopin,Classical
+11/3/21,Piano,Sonata K. 113,Scarlatti,Classical
+11/4/21,Piano,Nocturne Op. 36,Faure,Classical
+11/5/21,Piano,Moonlight Sonata,Beethoven,Classical
+11/6/21,Piano,Nocturne Op. 36,Faure,Classical
+11/7/21,Ukulele,Viva la Vida,Coldplay,Pop
+11/7/21,Ukulele,The Office Theme,Jay Ferguson,Soundtrack
+11/7/21,Piano,Nocturne Op. 36,Faure,Classical
+11/8/21,Piano,Nocturne Op. 36,Faure,Classical
+11/9/21,Piano,Moonlight Sonata,Beethoven,Classical
+11/10/21,Piano,Moonlight Sonata,Beethoven,Classical
+11/11/21,Piano,Sonata K. 113,Scarlatti,Classical
+11/11/21,Piano,OG Stuff,Me,My Composition
+11/12/21,Piano,Sonata K. 113,Scarlatti,Classical
+11/12/21,Electric Guitar,The Chain,Fleetwood Mac,Rock
+11/12/21,Electric Guitar,Don't Fear the Reaper,Blue Oyster Cult,Rock
+11/12/21,Electric Guitar,Found Out About You,Gin Blossoms,Rock
+11/13/21,Bass,Rasputin,Boney M,Pop
+11/13/21,Electric Guitar,OG Stuff,Me,My Composition
+11/13/21,Piano,OG Stuff,Me,My Composition
+11/13/21,Piano,Moonlight Sonata,Beethoven,Classical
+11/13/21,Piano,Raindrop Prelude,Chopin,Classical
+11/14/21,Piano,Nocturne Op. 36,Faure,Classical
+11/14/21,Electric Guitar,Found Out About You,Gin Blossoms,Rock
+11/14/21,Electric Guitar,OG Stuff,Me,My Composition
+11/14/21,Piano,OG Stuff,Me,My Composition
+11/15/21,Piano,Moonlight Sonata,Beethoven,Classical
+11/15/21,Electric Guitar,OG Stuff,Me,My Composition
+11/16/21,Piano,Moonlight Sonata,Beethoven,Classical
+11/17/21,Ukulele,Viva la Vida,Coldplay,Pop
+11/17/21,Ukulele,Take a Chance on Me,ABBA,Pop
+11/17/21,Piano,Moonlight Sonata,Beethoven,Classical
+11/18/21,Electric Guitar,OG Stuff,Me,My Composition
+11/18/21,Electric Guitar,Found Out About You,Gin Blossoms,Rock
+11/19/21,Piano,Moonlight Sonata,Beethoven,Classical
+11/20/21,Electric Guitar,Don't Fear the Reaper,Blue Oyster Cult,Rock
+11/20/21,Electric Guitar,Hysteria,Muse,Rock
+11/20/21,Piano,Sonata K. 113,Scarlatti,Classical
+11/21/21,Banjo,Broken Crown,Mumford and Sons,Folk
+11/21/21,Piano,OG Stuff,Me,My Composition
+11/22/21,Piano,Sonata K. 113,Scarlatti,Classical
+11/22/21,Piano,Tempest Sonata,Beethoven,Classical
+11/23/21,Ukulele,Take a Chance on Me,ABBA,Pop
+11/24/21,Ukulele,Waltzing Matilda,N/A,Traditional
+11/24/21,Ukulele,Summertime,Gershwin,Jazz
+11/25/21,Ukulele,The Entertainer,Scott Joplin,Ragtime
+11/25/21,Ukulele,Living on a Prayer,Bon Jovi,Rock
+11/26/21,Ukulele,Summertime,Gershwin,Jazz
+11/26/21,Ukulele,Viva la Vida,Coldplay,Pop
+11/27/21,Ukulele,No Surprises,Radiohead,Rock
+11/27/21,Ukulele,Sonata no. 1 Presto,Bach,Classical
+11/28/21,Electric Guitar,Hysteria,Muse,Rock
+11/29/21,Piano,Tempest Sonata,Beethoven,Classical
+11/29/21,Electric Guitar,Hysteria,Muse,Rock
+11/30/21,Piano,Tempest Sonata,Beethoven,Classical
