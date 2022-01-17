@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+<! --- https://betterprogramming.pub/build-a-responsive-modern-dashboard-layout-with-css-grid-and-flexbox-bd343776a97e  --->
+
+<style>
+  /* Simple dashboard grid CSS */
+
+/* Assign grid instructions to our parent grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;
+}
+
+/* Give every child element its grid name */
+.header {
+  grid-area: header;
+  background-color: #648ca6;
+}
+
+.sidenav {
+  grid-area: sidenav;
+  background-color: #394263;
+  color: #fff;
+}
+
+.main {
+  grid-area: main;
+  background-color: #8fd4d9;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #648ca6;
+}
+
+/* Simple dashboard grid CSS */
+
+/* Assign grid instructions to our parent grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;
+}
+
+.main-cards {
+  column-count: 2;
+  column-gap: 20px;
+  margin: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #82bef6;
+  margin-bottom: 20px;
+  -webkit-column-break-inside: avoid;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* Force varying heights to simulate dynamic content */
+.card:first-child {
+  height: 485px;
+}
+
+.card:nth-child(2) {
+  height: 200px;
+}
+
+.card:nth-child(3) {
+  height: 265px;
+}
+</style>
+
+
+</head>
+<body>
+
+<div class="grid-container">
+  <header class="header"></header>
+  <aside class="sidenav">Explanation goes here</aside>
+  <main class="main">
+    <div class="main-cards">
+      <div class="card" id='myDiv'></div>
+      <div class="card">Card</div>
+      <div class="card">Card</div>
+    </div>
+    <div class="main-cards">
+      <div class="card">Card</div>
+      <div class="card">Card</div>
+      <div class="card">Card</div>
+    </div>
+  </main>
+  <footer class="footer"></footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-array.v2.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+
+<script>
+const monthNames = ["January", "February", "March", "April", "May", "June",
+"July", "August", "September", "October", "November", "December"
+];
+const yearConv = {
+  120: 2020,
+  121: 2021
+};
+
+function nest_by_month(my_data){
+  return d3.nest()
+  .key(function (d) {
+    return d.Instrument;
+  })
+    .key(function (d) {
+      date = new Date(d.Date);
+      rounded_date = new Date(date.getFullYear(), date.getMonth(), 1);
+      return rounded_date;
+    })
+    .rollup(function(d){
+      // https://stackoverflow.com/questions/29422792/how-to-get-the-total-number-of-rows-with-particular-value-in-json-file-in-d3-js
+      total = d.reduce(function(count, entry) {
+          return count + 1;
+      }, 0);
+      return total;
+    }).entries(my_data);
+}
+
+var my_data = d3.csv("https://raw.githubusercontent.com/morganoneka/MusicPractice/main/data/TranscribedData.csv", function(data){createCharts(data)});
+
+function createCharts(data){
+  processDataBarchart(data);
+}
+
+function processDataBarchart(allRows){
+  allRows = nest_by_month(allRows);
+  console.log(allRows);
+
+
+  var data =[];
+  // iterate over instruments
+  for (var i = 0; i<allRows.length; i++){
+    // set up basic trace skeleton
+    var trace={
+      x:[],
+      y:[],
+      name:allRows[i].key,
+      orientation: 'h',
+      type:'bar'
+    };
+    // iterate over dates
+    for (var j = 0; j < allRows[i].values.length; j++){
+      row = allRows[i];
+      date = new Date(row.values[j].key);
+      d_string = monthNames[date.getMonth()].concat(" ").concat(yearConv[date.getYear()]);
+      trace.y.push(d_string);
+      trace.x.push(row.values[j].value);
+    }
+    data.push(trace);
+  }
+
+  // console.log(data);
+  var layout = {
+  title: 'Practice Bar Chart',
+  barmode: 'stack'
+  };
+  var config = {responsive: true}
+  Plotly.newPlot('myDiv', data, layout, config);
+}
+
+</script>
+</body>
