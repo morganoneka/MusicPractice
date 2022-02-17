@@ -96,11 +96,11 @@
 
 <div class="grid-container">
   <header class="header"></header>
-  <aside class="sidenav">Explanation goes here</aside>
+  <aside class="sidenav">In 2020, I made the New Year's Resolution to play music every day. On March 4th, after losing my written log too many times, I went digital. My goal with this visualization is to provide insights into my practice history in order to help me practice more, and practice more efficiently.</aside>
   <main class="main">
     <div class="main-cards">
-      <div class="card" id='myDiv'></div>
-      <div class="card">Card</div>
+      <div class="card" id='heatmap'></div>
+      <div class="card" id='lastpractice' style="overflow:auto"></div>
       <div class="card">Card</div>
     </div>
     <div class="main-cards">
@@ -118,25 +118,96 @@
 <script src="https://d3js.org/d3.v4.js"></script>
 <script src="https://d3js.org/d3-array.v2.min.js"></script>
 <script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
 
 <script>
 const monthNames = ["January", "February", "March", "April", "May", "June",
 "July", "August", "September", "October", "November", "December"
 ];
-const yearConv = {
-  120: 2020,
-  121: 2021
-};
+const instruments = ["Piano", "Electric Guitar", "Acoustic Guitar", "Ukulele", "Bass", "Banjo"];
+function tabulate(data, columns, divname) {
+  var table = d3.select(divname).append('table').attr('class','table')
+  var thead = table.append('thead').attr('class','thead-dark')
+  var	tbody = table.append('tbody');
+
+
+  // append the header row
+  thead.append('tr')
+    .selectAll('th')
+    .data(columns).enter()
+    .append('th')
+      .text(function (column) { return column; });
+
+
+
+  // create a row for each object in the data
+  var rows = tbody.selectAll('tr')
+    .data(data)
+    .enter()
+    .append('tr');
+
+  // create a cell in each row for each column
+  var cells = rows.selectAll('td')
+    .data(function (row) {
+      return columns.map(function (column) {
+        return {column: column, value: row[column]};
+      });
+    })
+    .enter()
+    .append('td')
+      .text(function (d) { return d.value; });
+
+  return table;
+}
+
+function most_recent_practice_by_instrument(my_data){
+  return d3.nest().key(function (d) {
+    return d.Instrument;
+  }).rollup(function(oldestDate) {
+    return oldestDate.sort(function(a, b) {
+      x = new Date(a.Date);
+      y = new Date(b.Date);
+        return y - x
+    })[0].Date
+}).entries(my_data);
+}
+
+function most_recent_song_by_instrument(my_data){
+  return d3.nest().key(function (d) {
+    return d.Instrument;
+  }).rollup(function(oldestDate) {
+    return oldestDate.sort(function(a, b) {
+      x = new Date(a.Date);
+      y = new Date(b.Date);
+        return y - x
+    })[0]
+}).entries(my_data.filter(function(d){ return d.Genre != "My Composition" }));
+}
 
 function nest_by_month(my_data){
   return d3.nest()
-  .key(function (d) {
-    return d.Instrument;
-  })
     .key(function (d) {
       date = new Date(d.Date);
       rounded_date = new Date(date.getFullYear(), date.getMonth(), 1);
       return rounded_date;
+    })
+    .key(function (d) {
+      return d.Instrument;
+    })
+    .rollup(function(d){
+      // https://stackoverflow.com/questions/29422792/how-to-get-the-total-number-of-rows-with-particular-value-in-json-file-in-d3-js
+      total = d.reduce(function(count, entry) {
+          return count + 1;
+      }, 0);
+      return total;
+    }).entries(my_data);
+}
+
+function nest_by_day(my_data){
+  return d3.nest()
+  .key(function (d) {
+      return new Date(d.Date);
     })
     .rollup(function(d){
       // https://stackoverflow.com/questions/29422792/how-to-get-the-total-number-of-rows-with-particular-value-in-json-file-in-d3-js
@@ -151,43 +222,137 @@ var my_data = d3.csv("https://raw.githubusercontent.com/morganoneka/MusicPractic
 
 function createCharts(data){
   processDataBarchart(data);
+  processHeatmap(data);
+  getLastPractice(data);
 }
 
-function processDataBarchart(allRows){
-  allRows = nest_by_month(allRows);
-  console.log(allRows);
+function processHeatmap(data){
+  data = nest_by_day(data).slice().sort((a,b) => d3.ascending(new Date(a.key), new Date(b.key)));
+
+  heatmapdata=[];
+  current_key="";
+  day_data=[];
+  for (i=0; i<data.length; i++){
+      date = new Date(data[i].key);
+      key = monthNames[date.getMonth()].concat(" ").concat(date.getFullYear());
+      // if we have switched months, push data
+      if (key != current_key || i==(data.length-1)){
+
+        // push data if we have data
+        if (day_data.length > 0){
+          // if the month isn't 31 days long, add
+          if (day_data.length < 31){
+            for (k=day_data.length; k<31; k++){
+              day_data.push(0);
+            }
+          }
 
 
-  var data =[];
-  // iterate over instruments
-  for (var i = 0; i<allRows.length; i++){
-    // set up basic trace skeleton
-    var trace={
-      x:[],
-      y:[],
-      name:allRows[i].key,
-      orientation: 'h',
-      type:'bar'
-    };
-    // iterate over dates
-    for (var j = 0; j < allRows[i].values.length; j++){
-      row = allRows[i];
-      date = new Date(row.values[j].key);
-      d_string = monthNames[date.getMonth()].concat(" ").concat(yearConv[date.getYear()]);
-      trace.y.push(d_string);
-      trace.x.push(row.values[j].value);
-    }
-    data.push(trace);
+          heatmapdata.push({
+            name: current_key,
+            data: day_data
+          });
+        }
+
+        // then, start new month
+        day = date.getDate();
+        day_data=[];
+        // march 2020 doesn't start on 1st of month, so add 0's
+        if (day > 1){
+          for (k=0; k < day-1; k++){
+            day_data.push(0);
+          }
+        }
+        day_data.push(data[i].value);
+        current_key=key;
+      }
+      // otherwise, just add data
+      else {
+        day_data.push(data[i].value);
+      }
   }
 
-  // console.log(data);
-  var layout = {
-  title: 'Practice Bar Chart',
-  barmode: 'stack'
-  };
-  var config = {responsive: true}
-  Plotly.newPlot('myDiv', data, layout, config);
+
+var options = {
+          series: heatmapdata,
+          chart: {
+          height: 350,
+          type: 'heatmap',
+        },
+        plotOptions: {
+          heatmap: {
+            shadeIntensity: 0.5,
+            radius: 0,
+            useFillColorAsStroke: true,
+            colorScale: {
+              ranges: [{
+                  from: 0,
+                  to: 0,
+                  name: 'N/A',
+                  color: '#cccccc'
+                },
+                {
+                  from: 1,
+                  to: 3,
+                  name: 'low',
+                  color: '#a68bff'
+                },
+                {
+                  from: 4,
+                  to: 7,
+                  name: 'medium',
+                  color: '#ff8bb2'
+                },
+                {
+                  from: 8,
+                  to: 100,
+                  name: 'high',
+                  color: '#faa46c'
+                }
+              ]
+            }
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          width: 1
+        },
+        title: {
+          text: 'Number of Practice Instances'
+        },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#heatmap"), options);
+        chart.render();
+
 }
+
+function getLastPractice(data){
+  data1=most_recent_practice_by_instrument(data);
+  data2=most_recent_song_by_instrument(data);
+  table_data = [];
+  for (i = 0 ; i < instruments.length; i++){
+    instrument = instruments[i];
+    d1 = data1.filter(function(d){return d.key == instrument});
+    d2 = data2.filter(function(d){return d.key == instrument});
+    table_data.push({
+      'Instrument': instrument,
+      'Last Practice': d1[0].value,
+      'Last Song/Piece Practiced': d2[0].value.Song.concat(" - ").concat(d2[0].value.Artist)
+    });
+  }
+  tabulate(table_data, ["Instrument", "Last Practice", "Last Song/Piece Practiced"], "#lastpractice");
+}
+
+function processDataBarchart(data){
+  data=nest_by_month(data);
+  // console.log(data);
+  // https://apexcharts.com/javascript-chart-demos/column-charts/stacked-column-100/
+}
+
+
 
 </script>
 </body>
