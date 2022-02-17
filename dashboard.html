@@ -8,6 +8,14 @@
 <! --- https://betterprogramming.pub/build-a-responsive-modern-dashboard-layout-with-css-grid-and-flexbox-bd343776a97e  --->
 
 <style>
+
+.table-condensed>thead>tr>th, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>tbody>tr>td, .table-condensed>tfoot>tr>td{
+    padding: 2px;
+}
+
+.table-condensed{
+  width:100%;
+}
   /* Simple dashboard grid CSS */
 
 /* Assign grid instructions to our parent grid container */
@@ -78,15 +86,19 @@
 
 /* Force varying heights to simulate dynamic content */
 .card:first-child {
-  height: 485px;
+  height: 520px;
 }
 
 .card:nth-child(2) {
-  height: 200px;
+  height: 250px;
 }
 
 .card:nth-child(3) {
-  height: 265px;
+  height: 250px;
+}
+
+.sidenav{
+  padding: 5px;
 }
 </style>
 
@@ -100,8 +112,8 @@
   <main class="main">
     <div class="main-cards">
       <div class="card" id='heatmap'></div>
+      <div class="card" id='goals' style="overflow:auto"></div>
       <div class="card" id='lastpractice' style="overflow:auto"></div>
-      <div class="card">Card</div>
     </div>
     <div class="main-cards">
       <div class="card">Card</div>
@@ -117,7 +129,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://d3js.org/d3.v4.js"></script>
 <script src="https://d3js.org/d3-array.v2.min.js"></script>
-<script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 
@@ -126,8 +137,10 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
 "July", "August", "September", "October", "November", "December"
 ];
 const instruments = ["Piano", "Electric Guitar", "Acoustic Guitar", "Ukulele", "Bass", "Banjo"];
-function tabulate(data, columns, divname) {
-  var table = d3.select(divname).append('table').attr('class','table')
+const goals=[5,3,3,3,1,1];
+
+function tabulate(data, columns, divname, compares=[]) {
+  var table = d3.select(divname).append('table').attr('class','table-condensed')
   var thead = table.append('thead').attr('class','thead-dark')
   var	tbody = table.append('tbody');
 
@@ -142,10 +155,29 @@ function tabulate(data, columns, divname) {
 
 
   // create a row for each object in the data
-  var rows = tbody.selectAll('tr')
-    .data(data)
-    .enter()
-    .append('tr');
+  if (compares.length != 2){
+    var rows = tbody.selectAll('tr')
+      .data(data)
+      .enter()
+      .append('tr')
+      .style('background-color', function(d){
+        console.log(d['Instrument']);
+        return ('white');
+      });
+  } else{
+    var rows = tbody.selectAll('tr')
+      .data(data)
+      .enter()
+      .append('tr')
+      .style('background-color', function(d){
+        if (d[compares[0]] >= d[compares[1]]){
+          return '#99ff98';
+        } else{
+          return '#ffa498';
+        }
+      });
+  }
+
 
   // create a cell in each row for each column
   var cells = rows.selectAll('td')
@@ -224,6 +256,7 @@ function createCharts(data){
   processDataBarchart(data);
   processHeatmap(data);
   getLastPractice(data);
+  getGoals(data);
 }
 
 function processHeatmap(data){
@@ -344,6 +377,47 @@ function getLastPractice(data){
     });
   }
   tabulate(table_data, ["Instrument", "Last Practice", "Last Song/Piece Practiced"], "#lastpractice");
+}
+
+function getGoals(data){
+  x = data.map(function(d) {
+    ugh = new Date(d.Date);
+    return  ugh;
+  });
+latestMth = d3.max(d3.values(x));
+  ct_data = d3.nest().key(function (d) {
+    return d.Instrument;
+  }).rollup(function(d){
+    y = d3.set(d3.map(d, function(x){return(x.Date)})).values();
+    total = y.reduce(function(count, entry) {
+        return count + 1;
+    }, 0);
+    return total;
+  }).entries(data.filter(function(d) {
+    ugh = new Date(d.Date);
+    ugh.setDate(ugh.getDate()+7);
+    return ugh > latestMth}));
+
+    table_data = [];
+    for (i = 0 ; i < instruments.length; i++){
+      instrument = instruments[i];
+      ct = ct_data.filter(function(d){return d.key == instrument});
+      if (ct.length >0){
+        table_data.push({
+          'Instrument': instrument,
+          'Days Practiced in Last Week': ct[0].value,
+          'Goal': goals[i]
+        });
+      } else{
+        table_data.push({
+          'Instrument': instrument,
+          'Days Practiced in Last Week': 0,
+          'Goal': goals[i]
+        });
+      }
+    }
+
+    tabulate(table_data, ["Instrument", "Days Practiced in Last Week", "Goal"], "#goals", ["Days Practiced in Last Week", "Goal"]);
 }
 
 function processDataBarchart(data){
