@@ -3,91 +3,189 @@
 
 <head>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+
+<! --- https://betterprogramming.pub/build-a-responsive-modern-dashboard-layout-with-css-grid-and-flexbox-bd343776a97e  --->
 
 <style>
 
+.table-condensed>thead>tr>th, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>tbody>tr>td, .table-condensed>tfoot>tr>td{
+    padding: 2px;
+}
+
+.table-condensed{
+  width:100%;
+  font-size: 12px;
+}
+
+.table-condensed th{
+  background-color: #7970f5;
+  color: white;
+}
+
+.table-condensed tr:nth-child(3n+1){
+  background-color: #ffe9d5;
+}
+.table-condensed tr:nth-child(3n+2){
+  background-color: #d8d5ff;
+}
+.table-condensed tr:nth-child(3n+3){
+  background-color: #ffdce7;
+}
+  /* Simple dashboard grid CSS */
+
+/* Assign grid instructions to our parent grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;
+}
+
+/* Give every child element its grid name */
+.header {
+  grid-area: header;
+  background-color: #ffba79;
+}
+
+.header h1{
+  font-family: 'Abril Fatface', cursive;
+  color: white;
+}
+
+.sidenav {
+  grid-area: sidenav;
+  background-color: #7970f5;
+  color: #fff;
+}
+
+.main {
+  grid-area: main;
+  background-color: #ff8bb2;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #ffba79;
+}
+
+/* Simple dashboard grid CSS */
+
+/* Assign grid instructions to our parent grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;
+}
+
+.main-cards {
+  column-count: 2;
+  column-gap: 20px;
+  margin: 20px;
+}
+
+.card, .card2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #ffdce7;
+  margin-bottom: 20px;
+  -webkit-column-break-inside: avoid;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+/* Force varying heights to simulate dynamic content */
+.card:first-child {
+  height: 520px;
+}
+
+.card:nth-child(2) {
+  height: 250px;
+}
+
+.card:nth-child(3) {
+  height: 250px;
+}
+
+.card2:first-child {
+  height: 250px;
+}
+
+.card2:nth-child(2) {
+  height: 250px;
+}
+
+.card2:nth-child(3) {
+  height: 520px;
+}
+
+.sidenav{
+  padding: 5px;
+}
+
+songname{
+  background-color: #ff8bb2;
+  color: #fff;
+  padding: 3px;
+}
+
+artistname{
+  background-color: #7970f5;
+  color: #fff;
+  padding: 3px;
+}
+
+instrumentname{
+  background-color: #ffba79;
+  color: #fff;
+  padding: 3px;
+}
+
+button{
+  margin: 10px;
+}
 </style>
 
+
+</head>
 <body>
 
+<div class="grid-container">
+  <header class="header"><center><h1>Music Practice Dashboard</h1></center></header>
+  <aside class="sidenav">In 2020, I made the New Year's Resolution to play music every day. On March 4th, after losing my written log too many times, I went digital. My goal with this visualization is to provide insights into my practice history in order to help me practice more, and practice more efficiently.</aside>
+  <main class="main">
+    <div class="main-cards">
+      <div class="card" id='heatmap'></div>
+      <div class="card" id='goals' style="overflow:auto"></div>
+      <div class="card" id='lastpractice' style="overflow:auto"></div>
+    </div>
+    <div class="main-cards">
+      <div class="card2">What should I practice?
 
-<div class="jumbotron text-center">
- <h1>Music Practice Analysis</h1>
- <p>An exercise in finally learning how to use d3.js</p>
-</div>
+      <button type="button" class="btn btn-light" onclick="generateSong()">Generate</button>
 
-<div class="container">
- <div class="row">
-   <div class="col-sm-12">
-     <h3>Introduction</h3>
-     <p>In 2020, after several years of being in a bit of a plateau with my musical skills, I set a New Year's Resolution to practice music in some form every day. I started tracking what I was practicing in early March as a way to keep track of my progress. </p>
-     <p>Some additional notes:
-       <ul>
-         <li>A song is considered <i>practiced</i> if I practice for more than ~ 15 minutes. Basically I need to make meaningful progress into playing it better for it to count. But beyond that, time spent practicing is not included. The time spent praciticing a song in a given day could be 15 minutes or 4 hours. </li>
-         <li>Genre is subjective. A lot of artists toe the line between genres. I'm really just curious about overall trends so if I call an artist "rock" when they're really "metal"... oh well.</li>
-       </ul>
-     </p>
-   </div>
- </div>
+      <div id="random"></div>
 
-
- <div class="row">
-   <div id="FullHeatmap">
-     <svg id="svg"></svg>
-   </div>
- </div>
-
- <!-- <div class="row">
-     <div class="col-sm-2">Piano</div>
-     <div class="col-sm-2">Electric Guitar</div>
-     <div class="col-sm-2">Acoustic Guitar</div>
-     <div class="col-sm-2">Bass</div>
-     <div class="col-sm-2">Banjo</div>
- </div> -->
-
-<!-- recent playing --->
- <div class="row">
-   <div class="col-sm-9" id="recent_plays_info">
-     <h3>What have I been playing recently?</h3>
-     <button type="button" id="recent_piano" class="btn btn-primary active">Piano</button>
-     <button type="button" id="recent_eg" class="btn btn-primary">Electric Guitar</button>
-     <button type="button" id="recent_ag" class="btn btn-primary">Acoustic Guitar</button>
-     <button type="button" id="recent_bass" class="btn btn-primary">Bass</button>
-     <button type="button" id="recent_banjo" class="btn btn-primary">Banjo</button>
-     <button type="button" id="recent_ukulele" class="btn btn-primary">Ukulele</button>
-   </div>
-   <div class="form-group col-sm-3">
-   <label>Number of days:</label>
-    <input type="email" class="form-control" id="genreDayInput" placeholder="90">
- </div>
- </div>
- <br>
-
- <div class="row" id="piano_recent">
- </div>
-
- <div class="row">
-   <div class="col-sm-12" id="top_genres_info">
-     <h3>What genres are most popular for each instrument?</h3>
-     <button type="button" id="genre_piano" class="btn btn-primary">Piano</button>
-     <button type="button" id="genre_eg" class="btn btn-primary">Electric Guitar</button>
-     <button type="button" id="genre_ag" class="btn btn-primary">Acoustic Guitar</button>
-     <button type="button" id="genre_bass" class="btn btn-primary">Bass</button>
-     <button type="button" id="genre_banjo" class="btn btn-primary">Banjo</button>
-     <button type="button" id="genre_ukulele" class="btn btn-primary">Ukulele</button>
-   </div>
- </div>
- <br>
- <div class="row" id="genre_count">
- </div>
-
- <div class="row">
-   <div class="col-sm-9"><h3>Line chart</h3></div>
-   <div class="col-sm-12" id="linechart">
-   </div>
- </div>
-
+    </div>
+      <div class="card2">Card</div>
+      <div class="card2"><div id="history" style="overflow:auto"></div></div>
+    </div>
+  </main>
+  <footer class="footer"></footer>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -95,8 +193,324 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://d3js.org/d3.v4.js"></script>
 <script src="https://d3js.org/d3-array.v2.min.js"></script>
-<script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
-<!-- <script src="./bar_chart.js"></script> -->
-<script type="text/javascript" src="viz.js"></script>
+
+<script>
+const monthNames = ["January", "February", "March", "April", "May", "June",
+"July", "August", "September", "October", "November", "December"
+];
+const instruments = ["Piano", "Electric Guitar", "Acoustic Guitar", "Ukulele", "Bass", "Banjo"];
+const goals=[5,3,3,3,1,1];
+
+function generateSong(){
+  item = my_data[Math.floor(Math.random() * my_data.length)];
+
+  if (item.Genre == "My Composition"){
+    while (item.Genre == "My Composition"){
+      item = my_data[Math.floor(Math.random() * my_data.length)];
+    }
+  }
+
+  d3.select("#random").html(["<center><p>You should play <songname>", item.Song, "</songname> by <artistname>", item.Artist, "</artistname> on the <instrumentname>", item.Instrument, "</instrumentname></p></center>"].join(""));
+}
+function tabulate(data, columns, divname, compares=[]) {
+  var table = d3.select(divname).append('table').attr('class','table-condensed')
+  var thead = table.append('thead').attr('class','thead-dark')
+  var	tbody = table.append('tbody');
+
+
+  // append the header row
+  thead.append('tr')
+    .selectAll('th')
+    .data(columns).enter()
+    .append('th')
+      .text(function (column) { return column; });
+
+
+
+  // create a row for each object in the data
+  if (compares.length != 2){
+    var rows = tbody.selectAll('tr')
+      .data(data)
+      .enter()
+      .append('tr');
+  } else{
+    var rows = tbody.selectAll('tr')
+      .data(data)
+      .enter()
+      .append('tr')
+      .style('background-color', function(d){
+        if (d[compares[0]] >= d[compares[1]]){
+          return '#99ff98';
+        } else{
+          return '#ffa498';
+        }
+      });
+  }
+
+
+  // create a cell in each row for each column
+  var cells = rows.selectAll('td')
+    .data(function (row) {
+      return columns.map(function (column) {
+        return {column: column, value: row[column]};
+      });
+    })
+    .enter()
+    .append('td')
+      .text(function (d) { return d.value; });
+
+  return table;
+}
+
+function most_recent_practice_by_instrument(my_data){
+  return d3.nest().key(function (d) {
+    return d.Instrument;
+  }).rollup(function(oldestDate) {
+    return oldestDate.sort(function(a, b) {
+      x = new Date(a.Date);
+      y = new Date(b.Date);
+        return y - x
+    })[0].Date
+}).entries(my_data);
+}
+
+function most_recent_song_by_instrument(my_data){
+  return d3.nest().key(function (d) {
+    return d.Instrument;
+  }).rollup(function(oldestDate) {
+    return oldestDate.sort(function(a, b) {
+      x = new Date(a.Date);
+      y = new Date(b.Date);
+        return y - x
+    })[0]
+}).entries(my_data.filter(function(d){ return d.Genre != "My Composition" }));
+}
+
+function nest_by_month(my_data){
+  return d3.nest()
+    .key(function (d) {
+      date = new Date(d.Date);
+      rounded_date = new Date(date.getFullYear(), date.getMonth(), 1);
+      return rounded_date;
+    })
+    .key(function (d) {
+      return d.Instrument;
+    })
+    .rollup(function(d){
+      // https://stackoverflow.com/questions/29422792/how-to-get-the-total-number-of-rows-with-particular-value-in-json-file-in-d3-js
+      total = d.reduce(function(count, entry) {
+          return count + 1;
+      }, 0);
+      return total;
+    }).entries(my_data);
+}
+
+function nest_by_day(my_data){
+  return d3.nest()
+  .key(function (d) {
+      return new Date(d.Date);
+    })
+    .rollup(function(d){
+      // https://stackoverflow.com/questions/29422792/how-to-get-the-total-number-of-rows-with-particular-value-in-json-file-in-d3-js
+      total = d.reduce(function(count, entry) {
+          return count + 1;
+      }, 0);
+      return total;
+    }).entries(my_data);
+}
+
+
+var my_data = null;
+d3.csv("https://raw.githubusercontent.com/morganoneka/MusicPractice/main/data/TranscribedData.csv", function(data){createCharts(data)
+my_data=data});
+
+function createCharts(data){
+  processDataBarchart(data);
+  processHeatmap(data);
+  getLastPractice(data);
+  getGoals(data);
+  visualizeAllData(data);
+}
+
+function visualizeAllData(data){
+  data = data.sort(function(a, b) {
+      x = new Date(a.Date);
+      y = new Date(b.Date);
+        return y-x;
+    });
+  tabulate(data, ['Date', 'Instrument', 'Song', 'Artist'], "#history");
+}
+
+function processHeatmap(data){
+  data = nest_by_day(data).slice().sort((a,b) => d3.ascending(new Date(a.key), new Date(b.key)));
+
+  heatmapdata=[];
+  current_key="";
+  day_data=[];
+  for (i=0; i<data.length; i++){
+      date = new Date(data[i].key);
+      key = monthNames[date.getMonth()].concat(" ").concat(date.getFullYear());
+      // if we have switched months, push data
+      if (key != current_key || i==(data.length-1)){
+
+        // push data if we have data
+        if (day_data.length > 0){
+          // if the month isn't 31 days long, add
+          if (day_data.length < 31){
+            for (k=day_data.length; k<31; k++){
+              day_data.push(0);
+            }
+          }
+
+
+          heatmapdata.push({
+            name: current_key,
+            data: day_data
+          });
+        }
+
+        // then, start new month
+        day = date.getDate();
+        day_data=[];
+        // march 2020 doesn't start on 1st of month, so add 0's
+        if (day > 1){
+          for (k=0; k < day-1; k++){
+            day_data.push(0);
+          }
+        }
+        day_data.push(data[i].value);
+        current_key=key;
+      }
+      // otherwise, just add data
+      else {
+        day_data.push(data[i].value);
+      }
+  }
+
+
+var options = {
+          series: heatmapdata,
+          chart: {
+          height: 350,
+          type: 'heatmap',
+        },
+        plotOptions: {
+          heatmap: {
+            shadeIntensity: 0.5,
+            radius: 0,
+            useFillColorAsStroke: true,
+            colorScale: {
+              ranges: [{
+                  from: 0,
+                  to: 0,
+                  name: 'N/A',
+                  color: '#cccccc'
+                },
+                {
+                  from: 1,
+                  to: 3,
+                  name: 'low',
+                  color: '#a68bff'
+                },
+                {
+                  from: 4,
+                  to: 7,
+                  name: 'medium',
+                  color: '#ff8bb2'
+                },
+                {
+                  from: 8,
+                  to: 100,
+                  name: 'high',
+                  color: '#faa46c'
+                }
+              ]
+            }
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          width: 1
+        },
+        title: {
+          text: 'Number of Practice Instances'
+        },
+        };
+
+        var chart = new ApexCharts(document.querySelector("#heatmap"), options);
+        chart.render();
+
+}
+
+function getLastPractice(data){
+  data1=most_recent_practice_by_instrument(data);
+  data2=most_recent_song_by_instrument(data);
+  table_data = [];
+  for (i = 0 ; i < instruments.length; i++){
+    instrument = instruments[i];
+    d1 = data1.filter(function(d){return d.key == instrument});
+    d2 = data2.filter(function(d){return d.key == instrument});
+    table_data.push({
+      'Instrument': instrument,
+      'Last Practice': d1[0].value,
+      'Last Song/Piece Practiced': d2[0].value.Song.concat(" - ").concat(d2[0].value.Artist)
+    });
+  }
+  tabulate(table_data, ["Instrument", "Last Practice", "Last Song/Piece Practiced"], "#lastpractice");
+}
+
+function getGoals(data){
+  x = data.map(function(d) {
+    ugh = new Date(d.Date);
+    return  ugh;
+  });
+latestMth = d3.max(d3.values(x));
+  ct_data = d3.nest().key(function (d) {
+    return d.Instrument;
+  }).rollup(function(d){
+    y = d3.set(d3.map(d, function(x){return(x.Date)})).values();
+    total = y.reduce(function(count, entry) {
+        return count + 1;
+    }, 0);
+    return total;
+  }).entries(data.filter(function(d) {
+    ugh = new Date(d.Date);
+    ugh.setDate(ugh.getDate()+7);
+    return ugh > latestMth}));
+
+    table_data = [];
+    for (i = 0 ; i < instruments.length; i++){
+      instrument = instruments[i];
+      ct = ct_data.filter(function(d){return d.key == instrument});
+      if (ct.length >0){
+        table_data.push({
+          'Instrument': instrument,
+          'Days Practiced in Last Week': ct[0].value,
+          'Goal': goals[i]
+        });
+      } else{
+        table_data.push({
+          'Instrument': instrument,
+          'Days Practiced in Last Week': 0,
+          'Goal': goals[i]
+        });
+      }
+    }
+
+    tabulate(table_data, ["Instrument", "Days Practiced in Last Week", "Goal"], "#goals", ["Days Practiced in Last Week", "Goal"]);
+}
+
+function processDataBarchart(data){
+  data=nest_by_month(data);
+  // console.log(data);
+  // https://apexcharts.com/javascript-chart-demos/column-charts/stacked-column-100/
+}
+
+
+
+</script>
 </body>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<style>
+
+</style>
+
+<body>
+
+
+<div class="jumbotron text-center">
+ <h1>Music Practice Analysis</h1>
+ <p>An exercise in finally learning how to use d3.js</p>
+</div>
+
+<div class="container">
+ <div class="row">
+   <div class="col-sm-12">
+     <h3>Introduction</h3>
+     <p>In 2020, after several years of being in a bit of a plateau with my musical skills, I set a New Year's Resolution to practice music in some form every day. I started tracking what I was practicing in early March as a way to keep track of my progress. </p>
+     <p>Some additional notes:
+       <ul>
+         <li>A song is considered <i>practiced</i> if I practice for more than ~ 15 minutes. Basically I need to make meaningful progress into playing it better for it to count. But beyond that, time spent practicing is not included. The time spent praciticing a song in a given day could be 15 minutes or 4 hours. </li>
+         <li>Genre is subjective. A lot of artists toe the line between genres. I'm really just curious about overall trends so if I call an artist "rock" when they're really "metal"... oh well.</li>
+       </ul>
+     </p>
+   </div>
+ </div>
+
+
+ <div class="row">
+   <div id="FullHeatmap">
+     <svg id="svg"></svg>
+   </div>
+ </div>
+
+ <!-- <div class="row">
+     <div class="col-sm-2">Piano</div>
+     <div class="col-sm-2">Electric Guitar</div>
+     <div class="col-sm-2">Acoustic Guitar</div>
+     <div class="col-sm-2">Bass</div>
+     <div class="col-sm-2">Banjo</div>
+ </div> -->
+
+<!-- recent playing --->
+ <div class="row">
+   <div class="col-sm-9" id="recent_plays_info">
+     <h3>What have I been playing recently?</h3>
+     <button type="button" id="recent_piano" class="btn btn-primary active">Piano</button>
+     <button type="button" id="recent_eg" class="btn btn-primary">Electric Guitar</button>
+     <button type="button" id="recent_ag" class="btn btn-primary">Acoustic Guitar</button>
+     <button type="button" id="recent_bass" class="btn btn-primary">Bass</button>
+     <button type="button" id="recent_banjo" class="btn btn-primary">Banjo</button>
+     <button type="button" id="recent_ukulele" class="btn btn-primary">Ukulele</button>
+   </div>
+   <div class="form-group col-sm-3">
+   <label>Number of days:</label>
+    <input type="email" class="form-control" id="genreDayInput" placeholder="90">
+ </div>
+ </div>
+ <br>
+
+ <div class="row" id="piano_recent">
+ </div>
+
+ <div class="row">
+   <div class="col-sm-12" id="top_genres_info">
+     <h3>What genres are most popular for each instrument?</h3>
+     <button type="button" id="genre_piano" class="btn btn-primary">Piano</button>
+     <button type="button" id="genre_eg" class="btn btn-primary">Electric Guitar</button>
+     <button type="button" id="genre_ag" class="btn btn-primary">Acoustic Guitar</button>
+     <button type="button" id="genre_bass" class="btn btn-primary">Bass</button>
+     <button type="button" id="genre_banjo" class="btn btn-primary">Banjo</button>
+     <button type="button" id="genre_ukulele" class="btn btn-primary">Ukulele</button>
+   </div>
+ </div>
+ <br>
+ <div class="row" id="genre_count">
+ </div>
+
+ <div class="row">
+   <div class="col-sm-9"><h3>Line chart</h3></div>
+   <div class="col-sm-12" id="linechart">
+   </div>
+ </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script src="https://d3js.org/d3-array.v2.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-2.6.3.min.js"></script>
+
+<!-- <script src="./bar_chart.js"></script> -->
+<script type="text/javascript" src="viz.js"></script>
+</body>
