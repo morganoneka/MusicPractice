@@ -354,7 +354,10 @@ function processHeatmap(data){
       key = monthNames[date.getMonth()].concat(" ").concat(date.getFullYear());
       // if we have switched months, push data
       if (key != current_key || i==(data.length-1)){
-
+        console.log(date);
+        if (i==(data.length-1)){
+          day_data.push(data[i].value);
+        }
         // push data if we have data
         if (day_data.length > 0){
           // if the month isn't 31 days long, add
