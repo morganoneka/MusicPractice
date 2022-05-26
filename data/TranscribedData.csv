@@ -216,7 +216,7 @@ Date,Instrument,Song,Artist,Genre
 4/20/20,Electric Guitar,Whip It,DEVO,Rock
 4/20/20,Electric Guitar,Everything is Alright,Motion City Soundtrack,Rock
 4/20/20,Electric Guitar,Slow Death,We are Scientists,Rock
-4/20/20,Acoustic Guitar,How I Good,Yellowcard,Rock
+4/20/20,Acoustic Guitar,How I Go,Yellowcard,Rock
 4/21/20,Piano,Moonlight Sonata,Beethoven,Classical
 4/21/20,Electric Guitar,Sex on Fire,Kings of Leon,Rock
 4/21/20,Electric Guitar,Hungry Like the Wolf,Duran Duran,Rock
@@ -2104,3 +2104,133 @@ Date,Instrument,Song,Artist,Genre
 2/27/22,Electric Guitar,The Chain,Fleetwood Mac,Rock
 2/27/22,Piano,Nocturne in F# minor,Rachmaninov,Classical
 2/28/22,Piano,Nocturne in F# minor,Rachmaninov,Classical
+3/1/22,Piano,First Arabesque,Debussy,Classical
+3/2/22,Piano,First Arabesque,Debussy,Classical
+3/3/22,Electric Guitar,The Chain,Fleetwood Mac,Rock
+3/3/22,Acoustic Guitar,Going to California,Led Zeppelin,Rock
+3/4/22,Acoustic Guitar,Going to California,Led Zeppelin,Rock
+3/5/22,Acoustic Guitar,Going to California,Led Zeppelin,Rock
+3/6/22,Piano,First Arabesque,Debussy,Classical
+3/7/22,Piano,First Arabesque,Debussy,Classical
+3/8/22,Acoustic Guitar,Going to California,Led Zeppelin,Rock
+3/9/22,Piano,Moonlight Sonata,Beethoven,Classical
+3/10/22,Piano,Moonlight Sonata,Beethoven,Classical
+3/11/22,Acoustic Guitar,Going to California,Led Zeppelin,Rock
+3/12/22,Acoustic Guitar,Solsbury Hill,Peter Gabriel,Rock
+3/13/22,Acoustic Guitar,Going to California,Led Zeppelin,Rock
+3/13/22,Bass,Wraith Pinned to the Mist,Of Montreal,Indie
+3/14/22,Piano,Moonlight Sonata,Beethoven,Classical
+3/14/22,Ukulele,No Surprises,Radiohead,Rock
+3/14/22,Ukulele,In the Air Tonight,Phil Collins,Rock
+3/15/22,Acoustic Guitar,Cherry Wine,Hozier,Folk
+3/15/22,Electric Guitar,Hysteria,Def Leppard,Rock
+3/16/22,Acoustic Guitar,Cherry Wine,Hozier,Folk
+3/16/22,Acoustic Guitar,Bloom,The Paper Kites,Folk
+3/16/22,Acoustic Guitar,Solsbury Hill,Peter Gabriel,Rock
+3/17/22,Bass,Wraith Pinned to the Mist,Of Montreal,Indie
+3/17/22,Bass,Rasputin,Boney M,Pop
+3/17/22,Piano,Moonlight Sonata,Beethoven,Classical
+3/18/22,Acoustic Guitar,Cherry Wine,Hozier,Folk
+3/18/22,Piano,First Arabesque,Debussy,Classical
+3/18/22,Piano,Moonlight Sonata,Beethoven,Classical
+3/19/22,Acoustic Guitar,Going to California,Led Zeppelin,Rock
+3/20/22,Acoustic Guitar,Cherry Wine,Hozier,Folk
+3/20/22,Acoustic Guitar,Fast Car,Tracy Chapman,Folk
+3/20/22,Acoustic Guitar,Landslide,Fleetwood Mac,Rock
+3/21/22,Acoustic Guitar,Fast Car,Tracy Chapman,Folk
+3/21/22,Acoustic Guitar,Cherry Wine,Hozier,Folk
+3/21/22,Ukulele,Hey There Delilah,Plain White T's,Pop
+3/22/22,Electric Guitar,Knights of Cydonia,Muse,Rock
+3/22/22,Electric Guitar,Pens and Needles,Hawthorne Heights,Rock
+3/22/22,Electric Guitar,The Pretender,Foo Fighters,Rock
+3/23/22,Electric Guitar,Pens and Needles,Hawthorne Heights,Rock
+3/23/22,Acoustic Guitar,Cherry Wine,Hozier,Folk
+3/23/22,Piano,Sonata K. 113,Scarlatti,Classical
+3/23/22,Piano,Moonlight Sonata,Beethoven,Classical
+3/24/22,Ukulele,Sonata no. 1 Presto,Bach,Classical
+3/24/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+3/25/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+3/26/22,Acoustic Guitar,Cherry Wine,Hozier,Folk
+3/27/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+3/27/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+3/28/22,Ukulele,Hey There Delilah,Plain White T's,Pop
+3/28/22,Ukulele,In the Air Tonight,Phil Collins,Rock
+3/29/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+3/30/22,Piano,Moonlight Sonata,Beethoven,Classical
+3/31/22,Acoustic Guitar,Cherry Wine,Hozier,Folk
+3/31/22,Acoustic Guitar,Going to California,Led Zeppelin,Rock
+4/1/22,Electric Guitar,Don't Fear the Reaper,Blue Oyster Cult,Rock
+4/1/22,Acoustic Guitar,Fast Car,Tracy Chapman,Folk
+4/2/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/3/22,Banjo,OG Stuff,Me,My Composition
+4/3/22,Banjo,Stolen Dance,Milky Chance,Pop
+4/4/22,Acoustic Guitar,Road Trippin,Red Hot Chili Peppers,Rock
+4/5/22,Acoustic Guitar,Road Trippin,Red Hot Chili Peppers,Rock
+4/6/22,Acoustic Guitar,The Chain,Fleetwood Mac,Rock
+4/7/22,Electric Guitar,I Hate Everything About You,Three Days Grace,Rock
+4/7/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/8/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/9/22,Acoustic Guitar,The Chain,Fleetwood Mac,Rock
+4/9/22,Electric Guitar,These Days,Nico,Rock
+4/9/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/10/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/11/22,Ukulele,Waltzing Matilda,N/A,Traditional
+4/12/22,Bass,Fa-Fa-Fa,Datarock,Indie
+4/12/22,Electric Guitar,These Days,Nico,Rock
+4/13/22,Electric Guitar,These Days,Nico,Rock
+4/14/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/15/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/15/22,Electric Guitar,These Days,Nico,Rock
+4/15/22,Acoustic Guitar,Cherry Wine,Hozier,Folk
+4/15/22,Acoustic Guitar,Cathedrals,Jump Little Children,Rock
+4/16/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/17/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/18/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/19/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/20/22,Ukulele,Wake Me Up When September Ends,Green Day,Rock
+4/21/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/21/22,Piano,OG Stuff,Me,My Composition
+4/21/22,Electric Guitar,OG Stuff,Me,My Composition
+4/22/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/23/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/24/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/25/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/26/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+4/26/22,Piano,Moonlight Sonata,Beethoven,Classical
+4/27/22,Electric Guitar,These Days,Nico,Rock
+4/28/22,Piano,Moonlight Sonata,Beethoven,Classical
+4/29/22,Piano,Moonlight Sonata,Beethoven,Classical
+4/30/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/1/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/2/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/3/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/3/22,Electric Guitar,These Days,Nico,Rock
+5/3/22,Acoustic Guitar,Solsbury Hill,Peter Gabriel,Rock
+5/4/22,Banjo,Agape,Bears Den,Folk
+5/4/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/5/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/6/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/7/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/8/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/9/22,Electric Guitar,Hysteria,Muse,Rock
+5/10/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/11/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/12/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/13/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/13/22,Electric Guitar,Thank You for the Venom,My Chemical Romance,Rock
+5/14/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/15/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/16/22,Electric Guitar,Chop Suey!,System of a Down,Metal
+5/16/22,Electric Guitar,Killing in the Name,Rage Against the Machine,Rock
+5/17/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/18/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/19/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/20/22,Electric Guitar,Creep,Radiohead,Rock
+5/20/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/21/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/22/22,Electric Guitar,Creep,Radiohead,Rock
+5/22/22,Electric Guitar,Whip It,DEVO,Rock
+5/22/22,Acoustic Guitar,How I Go,Yellowcard,Rock
+5/23/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
+5/24/22,Piano,OG Stuff,Me,My Composition
+5/25/22,Piano,Sonata 8 Pathetique,Beethoven,Classical
